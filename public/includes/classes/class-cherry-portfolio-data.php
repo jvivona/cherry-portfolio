@@ -1103,9 +1103,10 @@ class Cherry_Portfolio_Data {
 	}
 
 	/**
-	 * Get option by name from theme options
+	 * Get option by name from theme options.
 	 *
 	 * @since  1.0.0
+	 * @since  1.0.4.2 Added the `cherry_portfolio_option_` filter.
 	 *
 	 * @uses   cherry_get_option  use cherry_get_option from Cherry framework if exist
 	 *
@@ -1114,10 +1115,19 @@ class Cherry_Portfolio_Data {
 	 * @return mixed            option value
 	 */
 	public static function cherry_portfolio_get_option( $name , $default = false ) {
+
 		if ( function_exists( 'cherry_get_option' ) ) {
 			$result = cherry_get_option( $name , $default );
-		return $result;
+
+			/**
+			 * Filter the value of an existing option.
+			 *
+			 * @since 1.0.4.2
+			 * @param mixed $value Value of the option.
+			 */
+			return apply_filters( 'cherry_portfolio_option_' . $name, $result );
 		}
+
 		return $default;
 	}
 
