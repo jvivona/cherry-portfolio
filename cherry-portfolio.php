@@ -3,7 +3,7 @@
  * Plugin Name: Cherry Portfolio
  * Plugin URI:  http://www.cherryframework.com/
  * Description: A portfolio plugin for WordPress.
- * Version:     1.0.3
+ * Version:     1.0.4.1
  * Author:      Cherry Team
  * Author URI:  http://www.cherryframework.com/
  * Text Domain: cherry-portfolio
@@ -57,6 +57,9 @@ if ( !class_exists( 'Cherry_Portfolio' ) ) {
 			// Load the admin files.
 			add_action( 'plugins_loaded', array( $this, 'admin' ),     4 );
 
+			// Load the extensions files.
+			add_action( 'after_setup_theme', array( $this, 'extensions' ), 11 );
+
 			// Load public-facing style sheet.
 			add_action( 'wp_enqueue_scripts',         array( $this, 'enqueue_styles' ) );
 			add_filter( 'cherry_compiler_static_css', array( $this, 'add_style_to_compiler' ) );
@@ -88,7 +91,7 @@ if ( !class_exists( 'Cherry_Portfolio' ) ) {
 			 *
 			 * @since 1.0.0
 			 */
-			define( 'CHERRY_PORTFOLIO_VERSION', '1.0.3' );
+			define( 'CHERRY_PORTFOLIO_VERSION', '1.0.4.1' );
 
 			/**
 			 * Set the slug of the plugin.
@@ -159,6 +162,19 @@ if ( !class_exists( 'Cherry_Portfolio' ) ) {
 						'repository_name'	=> CHERRY_PORTFOLIO_SLUG
 				));
 			}
+		}
+
+		/**
+		 * Loads extensions files.
+		 *
+		 * @since 1.0.4.2
+		 */
+		public function extensions() {
+
+			if ( function_exists( 'icl_object_id' ) ) {
+				require_once( trailingslashit( CHERRY_PORTFOLIO_DIR ) . 'public/extensions/wpml.php' );
+			}
+
 		}
 
 		/**
