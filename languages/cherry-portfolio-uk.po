@@ -1,0 +1,1006 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cherry-portfolio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-30 13:01+0200\n"
+"PO-Revision-Date: 2015-10-30 13:01+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/includes/class-cherry-portfolio-admin.php:104
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:223
+msgid "Title"
+msgstr "Заголовок"
+
+#: admin/includes/class-cherry-portfolio-admin.php:105
+msgid "Portfolio category"
+msgstr "Категорія портфоліо"
+
+#: admin/includes/class-cherry-portfolio-admin.php:106
+msgid "Portfolio tag"
+msgstr "Теґ портфоліо"
+
+#: admin/includes/class-cherry-portfolio-admin.php:107
+#: public/includes/classes/class-cherry-portfolio-data.php:904
+#: public/includes/classes/class-cherry-portfolio-options.php:216
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:250
+msgid "Date"
+msgstr "Дата"
+
+#: admin/includes/class-cherry-portfolio-admin.php:108
+msgid "Preview"
+msgstr "Попередній перегляд"
+
+#: admin/includes/class-cherry-portfolio-admin.php:139
+msgid "Post has no categories"
+msgstr "Публікація не належить до жодної з категорій"
+
+#: admin/includes/class-cherry-portfolio-admin.php:158
+msgid "Post has no tags"
+msgstr "Публікація не позначена жодним з теґів"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:49
+msgid "Post settings"
+msgstr "Налаштування публікації"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:57
+msgid "External-link:"
+msgstr "Зовнішнє посилання"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:58
+msgid "Enter an external link"
+msgstr "Введіть зовнішнє посилання"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:64
+msgid "Link text:"
+msgstr "Підпис посилання"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:65
+msgid "Enter link text."
+msgstr "Введіть підпис посилання"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:87
+msgid "Post format options"
+msgstr "Параметри формату публікації "
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:159
+msgid "Zoom image"
+msgstr "Збільшене зображення"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:160
+msgid "Using zooming image"
+msgstr "Використовувати збільшені зображення"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:163
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:185
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:328
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:339
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:381
+msgid "Yes"
+msgstr "Так"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:164
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:186
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:329
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:340
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:382
+msgid "No"
+msgstr "Ні"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:181
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:377
+#: public/includes/classes/class-cherry-portfolio-options.php:263
+msgid "Crop image"
+msgstr "Обрізати зображення"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:182
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:378
+msgid "Using cropped image"
+msgstr "Використовувати обрізані зображення"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:192
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:388
+msgid "Cropping image width"
+msgstr "Ширина обрізаного зображення"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:193
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:389
+msgid "Width value"
+msgstr "Значення ширини"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:201
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:397
+msgid "Cropping image height"
+msgstr "Висота обрізаного зображення"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:202
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:398
+msgid "Height value"
+msgstr "Значення висоти"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:221
+msgid "Slider images"
+msgstr "Зображення слайдера"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:222
+msgid "Select attachments images for slider"
+msgstr "Виберіть зображення для слайдера"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:231
+msgid "Gallery type"
+msgstr "Тип галереї"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:232
+msgid "Select gallery type"
+msgstr "Оберіть тип галереї"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:237
+msgid "Slider"
+msgstr "Слайдер"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:241
+#: public/includes/classes/class-cherry-portfolio-options.php:53
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:90
+msgid "Masonry"
+msgstr "Цеглинки"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:245
+#: public/includes/classes/class-cherry-portfolio-options.php:61
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:92
+msgid "Justified"
+msgstr "Припасований"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:253
+msgid "Slider effect Layout"
+msgstr "Макет ефекту слайдера"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:254
+msgid "Could be \"slide\", \"fade\", \"cube\" or \"coverflow\""
+msgstr ""
+"Можна застосувати такі ефекти, як \"гортання\", \"куб\" або ж \"заповнювати "
+"і переходити\""
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:259
+msgid "Slide"
+msgstr "Гортання"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:263
+msgid "Cube"
+msgstr "Куб"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:267
+msgid "Coverflow"
+msgstr "Заповнювати і переходити"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:275
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:276
+msgid "Number of slides per view"
+msgstr "Кількість слайдів, що відображаються"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:284
+msgid "Space Between Slides"
+msgstr "Відступ між слайдами"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:285
+msgid "Width of the space between slides(px)"
+msgstr "Ширина відступу між слайдами (у пікселях)"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:293
+msgid "Multi Row Slides Layout"
+msgstr "Макет багаторядного слайдера"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:294
+msgid "Number of slides per column"
+msgstr "Кількість слайдів у стовпці"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:302
+msgid "Slider pagination"
+msgstr "Нумерація слайдів"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:303
+msgid "Displaying slider pagination"
+msgstr "Відображати нумерацію слайдів"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:306
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:317
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:359
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:370
+msgid "Enabled"
+msgstr "Увімкнено"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:307
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:318
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:360
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:371
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:313
+msgid "Slider navigation"
+msgstr "Навігація між слайдами"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:314
+msgid "Displaying slider navigation"
+msgstr "Відображати навігацію між слайдами"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:324
+msgid "Slider Infinite Loop"
+msgstr "Безперервний цикл слайдера"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:325
+msgid "Slider Loop Mode"
+msgstr "Режим циклу слайдера"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:335
+msgid "Mousewheel Control"
+msgstr "Керування коліщатком миші"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:336
+msgid "Mousewheel Control Mode"
+msgstr "Режим керування коліщатком миші"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:346
+msgid "Duration of transition"
+msgstr "Тривалість переходу"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:347
+msgid "Duration of transition between slides (in ms)"
+msgstr "Тривалість переходу між слайдами (у мілісекундах)"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:355
+msgid "Free Mode sliding"
+msgstr "Довільний режим слайдера"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:356
+msgid "No fixed positions for slides"
+msgstr "Не закріплювати позицію слайдів"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:366
+msgid "Grab Cursor"
+msgstr "Захопити вказівник миші"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:367
+msgid "Using Grab Cursor for slider"
+msgstr "Використовувати захоплення вказівника миші"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:418
+msgid "Audio source"
+msgstr "Аудіо"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:419
+msgid "Enter audio source( mp3, m4a, ogg, wav, wma )"
+msgstr "Виберіть аудіофайл (mp3, m4a, ogg, wav, wma)"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:439
+msgid "Video type"
+msgstr "Тип відео"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:440
+msgid "Choose video type"
+msgstr "Оберіть тип відео"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:444
+msgid "Embed video type"
+msgstr "Вставлене відео"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:448
+msgid "HTML5 video type"
+msgstr "Відео HTML5"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:456
+msgid "Embed video source"
+msgstr "Вхідний файл вставленого відео"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:457
+msgid "Enter source for embed video"
+msgstr "Вкажіть шлях до вихідного файлу вставленого відео"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:463
+msgid "MP4 video source"
+msgstr "Шлях до відео у форматі mp4"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:464
+msgid "Enter source for MP4 video"
+msgstr "Вкажіть шлях до відео у форматі mp4"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:472
+msgid "WEBM video source"
+msgstr "Шлях до відео у форматі webm"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:473
+msgid "Enter source for WEBM video"
+msgstr "Вкажіть шлях до вихідного файлу вставленого відео"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:481
+msgid "OGV video source"
+msgstr "Шлях до відео у форматі ogv"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:482
+msgid "Enter source for OGV video"
+msgstr "Вкажіть шлях до відео у форматі ogv"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:335
+#: public/includes/classes/class-cherry-portfolio-data.php:621
+msgid "Template file (*.tmpl) not found"
+msgstr "Немає файла шаблону (*.tmpl)"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:472
+msgid "Standart post"
+msgstr "Тип публікації \"Звичайна\""
+
+#: public/includes/classes/class-cherry-portfolio-data.php:475
+msgid "Image post"
+msgstr "Тип публікації \"Зображення\""
+
+#: public/includes/classes/class-cherry-portfolio-data.php:478
+msgid "Gallery post"
+msgstr "Тип публікації \"Галерея\""
+
+#: public/includes/classes/class-cherry-portfolio-data.php:504
+msgid "Audio post"
+msgstr "Тип публікації \"Аудіо\""
+
+#: public/includes/classes/class-cherry-portfolio-data.php:507
+msgid "Video post"
+msgstr "Тип публікації \"Відео\""
+
+#: public/includes/classes/class-cherry-portfolio-data.php:521
+#, php-format
+msgid "%s image"
+msgid_plural "%s images"
+msgstr[0] "%s зображення"
+msgstr[1] "%s зображення"
+msgstr[2] "%s зображень"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:521
+msgid "No image"
+msgstr "Немає зображень "
+
+#: public/includes/classes/class-cherry-portfolio-data.php:566
+msgid "Posts not found"
+msgstr "Публікацій немає"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:802
+#, php-format
+msgid "Comment"
+msgid_plural "%s comments"
+msgstr[0] "%s коментар"
+msgstr[1] "%s коментарі"
+msgstr[2] "%s коментарів"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:803
+msgid "No comments"
+msgstr "Немає коментарів"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:855
+msgid "Category: "
+msgstr "Категорія"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:859
+msgid "Tags: "
+msgstr "Теґи"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:875
+msgid "Post has no taxonomies"
+msgstr "Публікація не має жодної таксономії"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:900
+#: public/includes/classes/class-cherry-portfolio-data.php:929
+msgid "Desc"
+msgstr "Висх"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:901
+#: public/includes/classes/class-cherry-portfolio-data.php:929
+msgid "Asc"
+msgstr "Спад"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:905
+#: public/includes/classes/class-cherry-portfolio-options.php:219
+msgid "Name"
+msgstr "Назва"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:906
+#: public/includes/classes/class-cherry-portfolio-options.php:222
+msgid "Modified"
+msgstr "Змінено"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:907
+#: public/includes/classes/class-cherry-portfolio-options.php:225
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:262
+msgid "Comments"
+msgstr "Коментарі"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:916
+msgid "Show all"
+msgstr "Відображати усі"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:930
+msgid "Order"
+msgstr "Порядок"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:935
+msgid "Order by"
+msgstr "Упорядкувати за"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:976
+msgid "Prev page"
+msgstr "Попередня сторінка"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:979
+msgid "Next page"
+msgstr "Наступна сторінка"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:46
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:96
+msgid "Portfolio listing layout"
+msgstr "Макет портфоліо "
+
+#: public/includes/classes/class-cherry-portfolio-options.php:47
+msgid "Choose portfolio listing view layout."
+msgstr "Виберіть макет портфоліо "
+
+#: public/includes/classes/class-cherry-portfolio-options.php:57
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:91
+msgid "Grid"
+msgstr "Сітка"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:65
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:93
+msgid "List"
+msgstr "Список"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:72
+msgid "Pagination mode"
+msgstr "Нумерація сторінок"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:73
+msgid "Choose portfolio pagination mode"
+msgstr "Виберіть тип нумерації сторінок пртфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:79
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:102
+msgid "Ajax pagination"
+msgstr "Нумерація сторінок Ajax "
+
+#: public/includes/classes/class-cherry-portfolio-options.php:83
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:103
+msgid "More button"
+msgstr "Кнопка \"Детальніше\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:90
+msgid "Loading animation"
+msgstr "Анімація при завантаженні"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:91
+msgid "Choose posts loading animation"
+msgstr "Анімація при завантаженні публікацій"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:97
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:112
+msgid "Fade animation"
+msgstr "Ефект поступової появи"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:101
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:113
+msgid "Scale animation"
+msgstr "Ефект масштабування"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:105
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:114
+msgid "Move Up animation"
+msgstr "Ефект руху вгору"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:109
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:115
+msgid "Flip animation"
+msgstr "Ефект вертикального відображення"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:113
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:116
+msgid "Helix animation"
+msgstr "Ефект горизонтального відображення"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:117
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:117
+msgid "Fall perspective animation"
+msgstr "Ефект падіння вперед"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:124
+msgid "Portfolio hover animation"
+msgstr "Анімація при наведенні вказівника миші"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:125
+msgid "Choose posts images hover animation"
+msgstr "Оберіть анімаційні ефекти для картинок при наведенні вказівника миші"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:131
+msgid "Fade"
+msgstr "Поступово виділяти"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:135
+msgid "Scale"
+msgstr "Масштабувати"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:139
+msgid "Custom"
+msgstr "Власний"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:147
+msgid "Select if you want to filter posts by tag or by category."
+msgstr "Вкажіть, фільтрувати публікації за теґом чи належністю до категорії"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:152
+#: public/includes/classes/class-cherry-portfolio-registration.php:133
+msgid "Category"
+msgstr "Категорія"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:156
+#: public/includes/classes/class-cherry-portfolio-registration.php:147
+msgid "Tag"
+msgstr "Теґ"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:163
+msgid "Portfolio filter categories list"
+msgstr ""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:174
+msgid "Portfolio filter tags list"
+msgstr ""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:185
+msgid "Filters"
+msgstr "Фільтри"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:186
+msgid "Enable/disable listing filters"
+msgstr "Увімкнути/Вимкнути фільтри"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:191
+msgid "Order filters"
+msgstr "Фільтри порядку"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:192
+msgid "Enable/disable order filters"
+msgstr "Увімкнути/Вимкнути фільтри порядку"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:202
+msgid "DESC"
+msgstr ""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:205
+msgid "ASC"
+msgstr ""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:231
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:164
+msgid "Column number"
+msgstr "Кількість стовпців"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:232
+msgid ""
+"Select number of columns for masonry and grid portfolio layouts. (Min 2, max "
+"20)"
+msgstr ""
+"Виберіть кількість стовпців для макетів \"цеглинки\" та \"сітка\" (від 2 до "
+"20)"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:239
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:155
+msgid "Posts per page"
+msgstr "Кількість публікацій на сторінці"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:240
+msgid "Select how many posts per page do you want to display"
+msgstr "Виберіть, скільки публікацій слід виводити на сторінці"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:247
+msgid "Item margin"
+msgstr "Зовнішній відступ елемента (margin)"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:248
+msgid "Select portfolio item margin (outer indent) value."
+msgstr "Виберіть значення зовнішнього відступу елементів."
+
+#: public/includes/classes/class-cherry-portfolio-options.php:255
+msgid "Justified fixed height"
+msgstr "Фіксована висота для макету \"Припасований\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:256
+msgid "Select portfolio item justified height value."
+msgstr "Виберіть значення висоти елементів для макету \"Припасований\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:264
+msgid "Choose if you want to activate images crop."
+msgstr "Зазначте, чи дозволене обрізання зображень"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:269
+msgid "Cropped image width"
+msgstr "Ширина обрізаного зображення"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:270
+msgid "Set width of the cropped image."
+msgstr "Зазначте бажану ширину обрізаного зображення"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:278
+msgid "Cropped image height"
+msgstr "Висота обрізаного зображення"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:279
+msgid "Set height of the cropped image."
+msgstr "Зазначте бажану висоту обрізаного зображення"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:287
+msgid "More button text"
+msgstr "Підпис кнопки \"Детальніше\"."
+
+#: public/includes/classes/class-cherry-portfolio-options.php:288
+msgid "Set text for portfolio \"read more\" buttons."
+msgstr "Зазначте підпис кнопки \"детальніше\" для публікацій типу портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:289
+msgid "Read more"
+msgstr "Детальніше"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:293
+msgid "Masonry template"
+msgstr "шаблон \"Цеглинки\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:294
+msgid "Masonry content template"
+msgstr "шаблон макету \"Цеглинки\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:299
+msgid "Grid template"
+msgstr "шаблон \"Сітка\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:300
+msgid "Grid content template"
+msgstr "шаблон макету \"Сітка\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:305
+msgid "Justified template"
+msgstr "шаблон \"Припасований\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:306
+msgid "Justified content template"
+msgstr "шаблон макету \"Припасований\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:311
+msgid "List template"
+msgstr "шаблон \"Список\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:312
+msgid "List content template"
+msgstr "шаблон макету \"Список\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:317
+msgid "Standard post template"
+msgstr ""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:318
+msgid "Standard post format template content"
+msgstr ""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:323
+msgid "Image post template"
+msgstr "шаблон публікації \"Зображення\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:324
+msgid "Image post format template content"
+msgstr "шаблон вмісту публікації типу \"Зображення\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:329
+msgid "Gallery post template"
+msgstr "шаблон публікації \"Галерея\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:330
+msgid "Gallery post format template content"
+msgstr "шаблон вмісту публікації типу \"Галерея\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:335
+msgid "Audio post template"
+msgstr "шаблон публікації \"Аудіо\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:336
+msgid "Audio post format template content"
+msgstr "шаблон вмісту публікації типу \"Аудіо\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:341
+msgid "Video post template"
+msgstr "шаблон публікації \"Відео\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:342
+msgid "Video post format template content"
+msgstr "шаблон вмісту публікації типу \"Відео\""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:348
+msgid "Cherry Portfolio"
+msgstr "Cherry Портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:366
+msgid "Portfolio posts"
+msgstr "Портфоліо Публікації "
+
+#: public/includes/classes/class-cherry-portfolio-options.php:369
+msgid ""
+"You can choose if you want to display sidebars and how you want to display "
+"them."
+msgstr ""
+"Тут можна вибрати, чи відображати бічні панелі і яким саме чином це робити."
+
+#: public/includes/classes/class-cherry-portfolio-options.php:375
+msgid "Left sidebar"
+msgstr "Ліва бічна панель"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:379
+msgid "Right sidebar"
+msgstr "Права бічна панель"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:383
+msgid "Left and right sidebar"
+msgstr "Ліва та права бічні панелі"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:387
+msgid "Two sidebars on the left"
+msgstr "Дві бічні панелі зліва"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:391
+msgid "Two sidebars on the right"
+msgstr "Дві бічні панелі справа"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:395
+msgid "No sidebar"
+msgstr "Жодної бічної панелі"
+
+#: public/includes/classes/class-cherry-portfolio-page-template.php:58
+#: public/includes/classes/class-cherry-portfolio-registration.php:59
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:82
+msgid "Portfolio"
+msgstr "Портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:60
+msgid "Portfolio list"
+msgstr "Список портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:61
+msgid "Add Item"
+msgstr "Створити новий"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:62
+msgid "Add Portfolio Item"
+msgstr "Створити нову публікацію Портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:63
+msgid "Edit Portfolio Item"
+msgstr "Редагувати наявну публікацію Портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:64
+msgid "New Portfolio Item"
+msgstr "Нова публікація Портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:65
+msgid "View Portfolio Item"
+msgstr "Переглянути наявну публікацію Портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:66
+msgid "Search Portfolio Items"
+msgstr "Шукати Портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:67
+msgid "No Portfolio Items found"
+msgstr "Немає елементів портфоліо."
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:68
+msgid "No Portfolio Items found in trash"
+msgstr "В кошику теж немає елементів портфоліо."
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:131
+msgid "Portfolio Categories"
+msgstr "Категорії портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:132
+#: public/includes/classes/class-cherry-portfolio-registration.php:134
+msgid "Categories"
+msgstr "Категорії"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:145
+msgid "Portfolio Tags"
+msgstr "Теґи портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:146
+#: public/includes/classes/class-cherry-portfolio-registration.php:148
+msgid "Tags"
+msgstr "Теґи"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:106
+msgid "Portfolio pagination type"
+msgstr "Тип нумерації сторінок портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:120
+msgid "Portfolio items animation type"
+msgstr "Анімація елементів портфоліо"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:126
+msgid "All formats"
+msgstr "Всі формати"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:127
+msgid "Standard format"
+msgstr "Формат \"Стандартний\""
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:128
+msgid "Image format"
+msgstr "Формат \"Зображення\""
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:129
+msgid "Gallery format"
+msgstr "Формат \"Галерея\""
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:130
+msgid "Audio format"
+msgstr "Формат \"Аудіо\""
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:131
+msgid "Video format"
+msgstr "Формат \"Відео\""
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:134
+msgid "Post format"
+msgstr "Формат публікації"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:135
+msgid "Select post format"
+msgstr "Оберіть формат публікації"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:140
+msgid "Filter"
+msgstr "Фільтр"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:141
+msgid "Filter visible"
+msgstr "Відображати фільтр"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:146
+msgid "Order filter"
+msgstr "Фільтр порядку"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:147
+msgid "Order filter visible"
+msgstr "Відображати фільтр порядку"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:156
+msgid ""
+"Specify number of posts that you want to show. Enter -1 to get all posts"
+msgstr ""
+"Вкажіть кількість публікацій, що відображатиметься на сторінці. Для "
+"відображення всіх публікацій використовуйте значення \"-1\""
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:165
+msgid "Set columns number (has effect only for columns layout type)"
+msgstr ""
+"Зазначте кількість стовпців (застосовується для типу макету \"стовпці\")"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:173
+msgid "Gutter width"
+msgstr "Ширина відступу"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:174
+msgid "Set gutter width (in px)"
+msgstr "Вкажіть ширину відступу (у пікселях)"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:178
+msgid "Template"
+msgstr "Шаблон"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:179
+msgid "Content template"
+msgstr "Шаблон вмісту"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:183
+msgid "Class"
+msgstr "Клас"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:184
+msgid "Extra CSS class"
+msgstr "Користувацький клас CSS"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:226
+msgid "Helper information for `Title` macros"
+msgstr "Довідкова інформація для макроса `Title`  ('заголовок')"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:230
+msgid "Image"
+msgstr "Зображення"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:233
+msgid "Helper information for `Image` macros"
+msgstr "Довідкова інформація для макроса  `Image`  ('зображення')"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:237
+msgid "Content"
+msgstr "Вміст"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:240
+msgid "Helper information for `Content` macros"
+msgstr "Довідкова інформація для макроса  `Content`  ('вміст')"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:244
+msgid "Taxonomy"
+msgstr "Таксономія"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:256
+msgid "Author"
+msgstr "Автор"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:268
+msgid "External link"
+msgstr "Зовнішнє посилання"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:274
+msgid "Zoom link"
+msgstr "Посилання на масштабоване зображення"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:280
+msgid "Permalink"
+msgstr "Постійне посилання"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:286
+msgid "Permalink url"
+msgstr "Адреса постійного посилання"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:292
+msgid "Gallery thumbnail"
+msgstr "Мініатюра гелереї"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:298
+msgid "Thumbnails count"
+msgstr "Кількість мініатюр"
+
+#~ msgid "Title:"
+#~ msgstr "Заголовок:"
+
+#~ msgid "Limit:"
+#~ msgstr "Обмеження:"
+
+#~ msgid "Image Size (in pixels):"
+#~ msgstr "Розміри зображення (у пікселях):"
+
+#~ msgid "Display Author"
+#~ msgstr "Відображати автора"
+
+#~ msgid "Display Avatar"
+#~ msgstr "Відображати аватар"
+
+#~ msgid "Specific ID:"
+#~ msgstr "Певні ідентифікатори (ID):"
+
+#~ msgid "Testimonials Post IDs, separated by commas."
+#~ msgstr "Ідентифікатори (IDs) публікацій відгуків, відокремлені комами."
+
+#~ msgid "Order By:"
+#~ msgstr "Упорядкувати за:"
+
+#~ msgid "Order Direction:"
+#~ msgstr "Напрям впорядкування:"
+
+#~ msgid "Custom CSS Class:"
+#~ msgstr "Користувацький клас CSS:"
+
+#~ msgid "Standart post template"
+#~ msgstr "шаблон звичайної публікації"
+
+#~ msgid "Standart post format template content"
+#~ msgstr "шаблон звичайної публікації"

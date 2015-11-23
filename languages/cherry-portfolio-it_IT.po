@@ -1,0 +1,1007 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cherry-portfolio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-30 17:07+0200\n"
+"PO-Revision-Date: 2015-10-30 17:07+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/includes/class-cherry-portfolio-admin.php:104
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:223
+msgid "Title"
+msgstr "Titolo"
+
+#: admin/includes/class-cherry-portfolio-admin.php:105
+msgid "Portfolio category"
+msgstr "Categoria Portfolio"
+
+#: admin/includes/class-cherry-portfolio-admin.php:106
+msgid "Portfolio tag"
+msgstr "Portfolio tag"
+
+#: admin/includes/class-cherry-portfolio-admin.php:107
+#: public/includes/classes/class-cherry-portfolio-data.php:904
+#: public/includes/classes/class-cherry-portfolio-options.php:216
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:250
+msgid "Date"
+msgstr "Data"
+
+#: admin/includes/class-cherry-portfolio-admin.php:108
+msgid "Preview"
+msgstr "Anteprima"
+
+#: admin/includes/class-cherry-portfolio-admin.php:139
+msgid "Post has no categories"
+msgstr "Articolo non ha categoria"
+
+#: admin/includes/class-cherry-portfolio-admin.php:158
+msgid "Post has no tags"
+msgstr "Articolo non ha tags"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:49
+msgid "Post settings"
+msgstr "Impostazioni Articolo"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:57
+msgid "External-link:"
+msgstr "Link esterno:"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:58
+msgid "Enter an external link"
+msgstr "Inserisci un link esterno"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:64
+msgid "Link text:"
+msgstr "Testo Link:"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:65
+msgid "Enter link text."
+msgstr "Inserisci il testo del link."
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:87
+msgid "Post format options"
+msgstr "Opzioni e il formato degli Articoli"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:159
+msgid "Zoom image"
+msgstr "Ingrandisci l'immagine"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:160
+msgid "Using zooming image"
+msgstr "Utilizzando lo zoom immagine"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:163
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:185
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:328
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:339
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:381
+msgid "Yes"
+msgstr "Si"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:164
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:186
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:329
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:340
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:382
+msgid "No"
+msgstr "No"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:181
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:377
+#: public/includes/classes/class-cherry-portfolio-options.php:263
+msgid "Crop image"
+msgstr "Ritaglia l'immagine"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:182
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:378
+msgid "Using cropped image"
+msgstr "Utilizza un'immagine ritagliata"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:192
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:388
+msgid "Cropping image width"
+msgstr "Larghezza dell'immagine Ritaglio"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:193
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:389
+msgid "Width value"
+msgstr "Valore Larghezza"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:201
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:397
+msgid "Cropping image height"
+msgstr "Altezza dell'immagine Ritaglio"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:202
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:398
+msgid "Height value"
+msgstr "Valore Altezza"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:221
+msgid "Slider images"
+msgstr "Immagini Slider"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:222
+msgid "Select attachments images for slider"
+msgstr "Seleziona allegati dell'immagini per lo scorrimento"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:231
+msgid "Gallery type"
+msgstr "Tipo Galleria"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:232
+msgid "Select gallery type"
+msgstr "Seleziona il tipo di galleria"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:237
+msgid "Slider"
+msgstr "Slider"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:241
+#: public/includes/classes/class-cherry-portfolio-options.php:53
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:90
+msgid "Masonry"
+msgstr "Muratura"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:245
+#: public/includes/classes/class-cherry-portfolio-options.php:61
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:92
+msgid "Justified"
+msgstr "Giustificato"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:253
+msgid "Slider effect Layout"
+msgstr "Disposizione effetto Slider"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:254
+msgid "Could be \"slide\", \"fade\", \"cube\" or \"coverflow\""
+msgstr ""
+"Potrebbe essere tipo \"slide\", \"fade\", \"cube\" oppure \"coverflow\""
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:259
+msgid "Slide"
+msgstr "Slide"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:263
+msgid "Cube"
+msgstr "Cubo"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:267
+msgid "Coverflow"
+msgstr "Coverflow"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:275
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:276
+msgid "Number of slides per view"
+msgstr "Numero di slides per la visualizzazione"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:284
+msgid "Space Between Slides"
+msgstr "Spazio tra le Slides"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:285
+msgid "Width of the space between slides(px)"
+msgstr "Larghezza dello spazio tra le slides(px)"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:293
+msgid "Multi Row Slides Layout"
+msgstr "Disposizione Multi Row Slides"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:294
+msgid "Number of slides per column"
+msgstr "Numero di slides per la colonna"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:302
+msgid "Slider pagination"
+msgstr "Paginazione Slider"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:303
+msgid "Displaying slider pagination"
+msgstr "Visualizzazione della impaginazione slider"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:306
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:317
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:359
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:370
+msgid "Enabled"
+msgstr "Abilita"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:307
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:318
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:360
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:371
+msgid "Disabled"
+msgstr "Disabilita"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:313
+msgid "Slider navigation"
+msgstr "Navigazione Slider"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:314
+msgid "Displaying slider navigation"
+msgstr "Visualizzazione navigazione slider"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:324
+msgid "Slider Infinite Loop"
+msgstr "Slider Infinite Loop"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:325
+msgid "Slider Loop Mode"
+msgstr "Loop Mode Slider"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:335
+msgid "Mousewheel Control"
+msgstr "Mousewheel Controllo"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:336
+msgid "Mousewheel Control Mode"
+msgstr "Modo Mousewheel Controllo"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:346
+msgid "Duration of transition"
+msgstr "Durata della transizione"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:347
+msgid "Duration of transition between slides (in ms)"
+msgstr "Durata della transizione between slides (in ms)"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:355
+msgid "Free Mode sliding"
+msgstr "Modalità Gratuita scorrevole"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:356
+msgid "No fixed positions for slides"
+msgstr "Nessuna posizioni fissa per slides"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:366
+msgid "Grab Cursor"
+msgstr "Grab Cursor"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:367
+msgid "Using Grab Cursor for slider"
+msgstr "Utilizza Grab Cursor per slider"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:418
+msgid "Audio source"
+msgstr "Fonte audio"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:419
+msgid "Enter audio source( mp3, m4a, ogg, wav, wma )"
+msgstr "Inserisci sorgente audio( mp3, m4a, ogg, wav, wma )"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:439
+msgid "Video type"
+msgstr "Tipo Video"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:440
+msgid "Choose video type"
+msgstr "Scegli il tipo di video"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:444
+msgid "Embed video type"
+msgstr "Abilita tipo video"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:448
+msgid "HTML5 video type"
+msgstr "Tipo HTML5 video"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:456
+msgid "Embed video source"
+msgstr "Incorpora sorgente video"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:457
+msgid "Enter source for embed video"
+msgstr "Inserisci la fonte per il video"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:463
+msgid "MP4 video source"
+msgstr "Sorgente video MP4"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:464
+msgid "Enter source for MP4 video"
+msgstr "Inserisci fonte sorgente per MP4 video"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:472
+msgid "WEBM video source"
+msgstr "Fonte video WEBM"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:473
+msgid "Enter source for WEBM video"
+msgstr "Inserisci fonte per video WEBM"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:481
+msgid "OGV video source"
+msgstr "Fonte video OGV"
+
+#: admin/includes/class-cherry-portfolio-meta-boxes.php:482
+msgid "Enter source for OGV video"
+msgstr "Inserisci la fonte per il video OGV"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:335
+#: public/includes/classes/class-cherry-portfolio-data.php:621
+msgid "Template file (*.tmpl) not found"
+msgstr "File Template (*.tmpl) non trovato"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:472
+msgid "Standart post"
+msgstr "Articoli Standart"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:475
+msgid "Image post"
+msgstr "Immagine Articolo"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:478
+msgid "Gallery post"
+msgstr "Articoli Galleria"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:504
+msgid "Audio post"
+msgstr "Articoli Audio"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:507
+msgid "Video post"
+msgstr "Articoli Video"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:521
+#, php-format
+msgid "%s image"
+msgid_plural "%s images"
+msgstr[0] "%s immagine"
+msgstr[1] "%s immagini"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:521
+msgid "No image"
+msgstr "Immagine assente"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:566
+msgid "Posts not found"
+msgstr "Articoli non trovati"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:802
+#, php-format
+msgid "Comment"
+msgid_plural "%s comments"
+msgstr[0] "Commento"
+msgstr[1] "%s commenti"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:803
+msgid "No comments"
+msgstr "Commenti assenti"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:855
+msgid "Category: "
+msgstr "Categoria:"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:859
+msgid "Tags: "
+msgstr "Tags: "
+
+#: public/includes/classes/class-cherry-portfolio-data.php:875
+msgid "Post has no taxonomies"
+msgstr "Articolo non ha tassonomie"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:900
+#: public/includes/classes/class-cherry-portfolio-data.php:929
+msgid "Desc"
+msgstr "Desc"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:901
+#: public/includes/classes/class-cherry-portfolio-data.php:929
+msgid "Asc"
+msgstr "Asc"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:905
+#: public/includes/classes/class-cherry-portfolio-options.php:219
+msgid "Name"
+msgstr "Nome"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:906
+#: public/includes/classes/class-cherry-portfolio-options.php:222
+msgid "Modified"
+msgstr "Modificato"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:907
+#: public/includes/classes/class-cherry-portfolio-options.php:225
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:262
+msgid "Comments"
+msgstr "Commenti"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:916
+msgid "Show all"
+msgstr "Visualizza tutti"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:930
+msgid "Order"
+msgstr "Ordina"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:935
+msgid "Order by"
+msgstr "Ordina per"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:976
+msgid "Prev page"
+msgstr "Pagina precedente"
+
+#: public/includes/classes/class-cherry-portfolio-data.php:979
+msgid "Next page"
+msgstr "Pagina successiva"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:46
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:96
+msgid "Portfolio listing layout"
+msgstr "Disposizione della lista Portfolio"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:47
+msgid "Choose portfolio listing view layout."
+msgstr "Scegli la lista portfolio per la visualizzazione della disposizione."
+
+#: public/includes/classes/class-cherry-portfolio-options.php:57
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:91
+msgid "Grid"
+msgstr "Griglia"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:65
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:93
+msgid "List"
+msgstr "Lista"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:72
+msgid "Pagination mode"
+msgstr "Modo impaginazione"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:73
+msgid "Choose portfolio pagination mode"
+msgstr "Scegli modalità di impaginazione portfolio"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:79
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:102
+msgid "Ajax pagination"
+msgstr "Paginatura Ajax"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:83
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:103
+msgid "More button"
+msgstr "Ulteriore pulsante"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:90
+msgid "Loading animation"
+msgstr "Caricamento animazione"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:91
+msgid "Choose posts loading animation"
+msgstr "Scegli articoli loading animazione"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:97
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:112
+msgid "Fade animation"
+msgstr "Dissolvenza dell'animazione"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:101
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:113
+msgid "Scale animation"
+msgstr "Animazione Scala"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:105
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:114
+msgid "Move Up animation"
+msgstr "Move Up animazione"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:109
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:115
+msgid "Flip animation"
+msgstr "Animazione flip"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:113
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:116
+msgid "Helix animation"
+msgstr "Animazione Helix"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:117
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:117
+msgid "Fall perspective animation"
+msgstr "Animazione Fall perspective"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:124
+msgid "Portfolio hover animation"
+msgstr "Animazione Portfolio hover"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:125
+msgid "Choose posts images hover animation"
+msgstr "Scegliete immagini degli articoli hover animazione"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:131
+msgid "Fade"
+msgstr "Dissolvenza"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:135
+msgid "Scale"
+msgstr "Scala"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:139
+msgid "Custom"
+msgstr "Personalizzazione"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:147
+msgid "Select if you want to filter posts by tag or by category."
+msgstr ""
+"Scegliere se vuoi filtrare gli articoli per tag oppure per la categoria."
+
+#: public/includes/classes/class-cherry-portfolio-options.php:152
+#: public/includes/classes/class-cherry-portfolio-registration.php:133
+msgid "Category"
+msgstr "Categoria"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:156
+#: public/includes/classes/class-cherry-portfolio-registration.php:147
+msgid "Tag"
+msgstr "Tag"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:163
+msgid "Portfolio filter categories list"
+msgstr ""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:174
+msgid "Portfolio filter tags list"
+msgstr ""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:185
+msgid "Filters"
+msgstr "Filtri"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:186
+msgid "Enable/disable listing filters"
+msgstr "Abilita/disabilita filtri di elenco"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:191
+msgid "Order filters"
+msgstr "Ordina filtri"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:192
+msgid "Enable/disable order filters"
+msgstr "Abilita/disabilita ordine filtri"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:202
+msgid "DESC"
+msgstr ""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:205
+msgid "ASC"
+msgstr ""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:231
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:164
+msgid "Column number"
+msgstr "Numero colonna"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:232
+msgid ""
+"Select number of columns for masonry and grid portfolio layouts. (Min 2, max "
+"20)"
+msgstr ""
+"Seleziona il numero di colonne per muratura e la disposizione della griglia "
+"di portfolio (Min 2, max 20)"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:239
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:155
+msgid "Posts per page"
+msgstr "Articoli per pagina"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:240
+msgid "Select how many posts per page do you want to display"
+msgstr "Seleziona il numero di articoli per pagina che vuoi visualizzare"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:247
+msgid "Item margin"
+msgstr "Margine elemento"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:248
+msgid "Select portfolio item margin (outer indent) value."
+msgstr ""
+"Selezionare margine degli elementi di portfolio (trattino esterno) valore."
+
+#: public/includes/classes/class-cherry-portfolio-options.php:255
+msgid "Justified fixed height"
+msgstr "Giustificato altezza fissa"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:256
+msgid "Select portfolio item justified height value."
+msgstr "Seleziona elemento portfolio giustificato valore di altezza."
+
+#: public/includes/classes/class-cherry-portfolio-options.php:264
+msgid "Choose if you want to activate images crop."
+msgstr "Scegli se vuoi attivare le immagini delle colture."
+
+#: public/includes/classes/class-cherry-portfolio-options.php:269
+msgid "Cropped image width"
+msgstr "Larghezza ritagliata immagine"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:270
+msgid "Set width of the cropped image."
+msgstr "Impostare la larghezza dell'immagine ritagliata."
+
+#: public/includes/classes/class-cherry-portfolio-options.php:278
+msgid "Cropped image height"
+msgstr "Altezza ritagliata dell'immagine"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:279
+msgid "Set height of the cropped image."
+msgstr "Impostare altezza dell'immagine ritagliata."
+
+#: public/includes/classes/class-cherry-portfolio-options.php:287
+msgid "More button text"
+msgstr "Testo del pulsante Di più"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:288
+msgid "Set text for portfolio \"read more\" buttons."
+msgstr "Imposta il testo per il portfolio \"leggi di più\" pulsanti."
+
+#: public/includes/classes/class-cherry-portfolio-options.php:289
+msgid "Read more"
+msgstr "Leggi di più"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:293
+msgid "Masonry template"
+msgstr "Muratura template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:294
+msgid "Masonry content template"
+msgstr "Muratura contenuto template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:299
+msgid "Grid template"
+msgstr "Griglia template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:300
+msgid "Grid content template"
+msgstr "Griglia contenuto template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:305
+msgid "Justified template"
+msgstr "Justified template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:306
+msgid "Justified content template"
+msgstr "Justified contenuto template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:311
+msgid "List template"
+msgstr "Lista template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:312
+msgid "List content template"
+msgstr "Lista contenuto template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:317
+msgid "Standard post template"
+msgstr ""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:318
+msgid "Standard post format template content"
+msgstr ""
+
+#: public/includes/classes/class-cherry-portfolio-options.php:323
+msgid "Image post template"
+msgstr "Immagine articolo template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:324
+msgid "Image post format template content"
+msgstr "Immagine articoli e formato di contenuto template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:329
+msgid "Gallery post template"
+msgstr "Galleria articoli template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:330
+msgid "Gallery post format template content"
+msgstr "Galleria articoli e il formato del contenuto template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:335
+msgid "Audio post template"
+msgstr "Articoli audio template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:336
+msgid "Audio post format template content"
+msgstr "Articoli contenuto e formato audio template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:341
+msgid "Video post template"
+msgstr "Articolo video template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:342
+msgid "Video post format template content"
+msgstr "Formato video articoli contenuto template"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:348
+msgid "Cherry Portfolio"
+msgstr "Cherry Portfolio"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:366
+msgid "Portfolio posts"
+msgstr "Articoli Portfolio"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:369
+msgid ""
+"You can choose if you want to display sidebars and how you want to display "
+"them."
+msgstr ""
+"Se vuoi visualizzare le barre laterali puoi scegliere in che modo poterli "
+"visualizzazione."
+
+#: public/includes/classes/class-cherry-portfolio-options.php:375
+msgid "Left sidebar"
+msgstr "Barra laterale Sinistra"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:379
+msgid "Right sidebar"
+msgstr "Barra laterale Destra"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:383
+msgid "Left and right sidebar"
+msgstr "Barre laterali Sinistra e Destra"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:387
+msgid "Two sidebars on the left"
+msgstr "Due barre laterali sulla Sinistra"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:391
+msgid "Two sidebars on the right"
+msgstr "Due barre laterali sulla destra"
+
+#: public/includes/classes/class-cherry-portfolio-options.php:395
+msgid "No sidebar"
+msgstr "Barra laterale Assente"
+
+#: public/includes/classes/class-cherry-portfolio-page-template.php:58
+#: public/includes/classes/class-cherry-portfolio-registration.php:59
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:82
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:60
+msgid "Portfolio list"
+msgstr "Lista Portfolio"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:61
+msgid "Add Item"
+msgstr "Edita Elemento"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:62
+msgid "Add Portfolio Item"
+msgstr "Edita Elemento Portfolio"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:63
+msgid "Edit Portfolio Item"
+msgstr "Edita Elemento Portfolio"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:64
+msgid "New Portfolio Item"
+msgstr "Nuovo Elemento Portfolio"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:65
+msgid "View Portfolio Item"
+msgstr "Visualizza Elemento Portfolio"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:66
+msgid "Search Portfolio Items"
+msgstr "Cerca Elemento Portfolio"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:67
+msgid "No Portfolio Items found"
+msgstr "Nessun Elemento Portfolio trovato"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:68
+msgid "No Portfolio Items found in trash"
+msgstr "Nessun Elemento Portfolio trovato nel cestino"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:131
+msgid "Portfolio Categories"
+msgstr "Categorie Portfolio"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:132
+#: public/includes/classes/class-cherry-portfolio-registration.php:134
+msgid "Categories"
+msgstr "Categorie"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:145
+msgid "Portfolio Tags"
+msgstr "Portfolio Tags"
+
+#: public/includes/classes/class-cherry-portfolio-registration.php:146
+#: public/includes/classes/class-cherry-portfolio-registration.php:148
+msgid "Tags"
+msgstr "Tags"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:106
+msgid "Portfolio pagination type"
+msgstr "Portfolio tipo impaginazione"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:120
+msgid "Portfolio items animation type"
+msgstr "Elementi del parco tipo di animazione"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:126
+msgid "All formats"
+msgstr "Tutti i formati"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:127
+msgid "Standard format"
+msgstr "Formato Standard"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:128
+msgid "Image format"
+msgstr "Formato Immagine"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:129
+msgid "Gallery format"
+msgstr "Formato Galleria"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:130
+msgid "Audio format"
+msgstr "Formato Audio"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:131
+msgid "Video format"
+msgstr "Formato Video"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:134
+msgid "Post format"
+msgstr "Video Articolo"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:135
+msgid "Select post format"
+msgstr "Seleziona formato articolo"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:140
+msgid "Filter"
+msgstr "Filtro"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:141
+msgid "Filter visible"
+msgstr "Filtro visibile"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:146
+msgid "Order filter"
+msgstr "Filtro ordine"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:147
+msgid "Order filter visible"
+msgstr "Filtro ordine visibile"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:156
+msgid ""
+"Specify number of posts that you want to show. Enter -1 to get all posts"
+msgstr ""
+"Inserisci il numero degli articoli che si desidera visualizzare. Inserisci "
+"-1 per ottenere tutti gli Articoli"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:165
+msgid "Set columns number (has effect only for columns layout type)"
+msgstr ""
+"Impostare il numero delle colonne (ha effetto solo per il tipo di "
+"disposizione delle colonne)"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:173
+msgid "Gutter width"
+msgstr "Larghezza Gutter"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:174
+msgid "Set gutter width (in px)"
+msgstr "Impostare la larghezza di grondaia (in px)"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:178
+msgid "Template"
+msgstr "Template"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:179
+msgid "Content template"
+msgstr "Contenuto template"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:183
+msgid "Class"
+msgstr "Classe"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:184
+msgid "Extra CSS class"
+msgstr "Classe CSS Extra"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:226
+msgid "Helper information for `Title` macros"
+msgstr "Informazioni di supporto per `Titolo` macros"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:230
+msgid "Image"
+msgstr "Immagine"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:233
+msgid "Helper information for `Image` macros"
+msgstr "Informazioni di supporto per `Immagini` macros"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:237
+msgid "Content"
+msgstr "Contenuto"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:240
+msgid "Helper information for `Content` macros"
+msgstr "Informazioni di supporto per `Content` macros"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:244
+msgid "Taxonomy"
+msgstr "Tassonomia"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:256
+msgid "Author"
+msgstr "Autore"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:268
+msgid "External link"
+msgstr "Link esterno"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:274
+msgid "Zoom link"
+msgstr "Zoom link"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:280
+msgid "Permalink"
+msgstr "Permalink"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:286
+msgid "Permalink url"
+msgstr "Permalink url"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:292
+msgid "Gallery thumbnail"
+msgstr "Galleria thumbnail"
+
+#: public/includes/classes/class-cherry-portfolio-shortcode.php:298
+msgid "Thumbnails count"
+msgstr "Conteggio Thumbnails"
+
+#~ msgid "Title:"
+#~ msgstr "Titolo:"
+
+#~ msgid "Limit:"
+#~ msgstr "Limite:"
+
+#~ msgid "Image Size (in pixels):"
+#~ msgstr "Dimensione immagine (in pixel):"
+
+#~ msgid "Display Author"
+#~ msgstr "Visualizza Autore"
+
+#~ msgid "Display Avatar"
+#~ msgstr "Visualizza Avatar"
+
+#~ msgid "Specific ID:"
+#~ msgstr "Specifica ID:"
+
+#~ msgid "Testimonials Post IDs, separated by commas."
+#~ msgstr "Testimonials Articoli ID, separati da virgole."
+
+#~ msgid "Order By:"
+#~ msgstr "Ordina Per:"
+
+#~ msgid "Order Direction:"
+#~ msgstr "Direzione Ordine:"
+
+#~ msgid "Custom CSS Class:"
+#~ msgstr "Classe CSS Personalizzata"
+
+#~ msgid "Standart post template"
+#~ msgstr "Articoli standart template"
+
+#~ msgid "Standart post format template content"
+#~ msgstr "Contenuti standart degli articoli del template"

@@ -36,7 +36,7 @@ class Cherry_Portfolio_Admin {
 		// Only run our customization on the 'edit.php' page in the admin.
 		add_action( 'load-edit.php', array( $this, 'load_edit' ) );
 
-		// Modify the columns on the "Testimonials" screen.
+		// Modify the columns on the "Portfolio" screen.
 		add_filter( 'manage_edit-portfolio_columns',        array( $this, 'edit_portfolio_columns'   ) );
 		add_action( 'manage_portfolio_posts_custom_column', array( $this, 'manage_portfolio_columns' ), 10, 2 );
 
@@ -81,9 +81,7 @@ class Cherry_Portfolio_Admin {
 	public function print_styles() { ?>
 		<style type="text/css">
 		.edit-php .wp-list-table td.thumbnail.column-thumbnail,
-		.edit-php .wp-list-table th.manage-column.column-thumbnail,
-		.edit-php .wp-list-table td.author_name.column-author_name,
-		.edit-php .wp-list-table th.manage-column.column-author_name {
+		.edit-php .wp-list-table th.manage-column.column-thumbnail {
 			text-align: center;
 		}
 		</style>
@@ -97,18 +95,14 @@ class Cherry_Portfolio_Admin {
 	 * @return array
 	 */
 	public function edit_portfolio_columns( $post_columns ) {
-		// Adds the checkbox column.
-		$columns['cb'] = $post_columns['cb'];
 
-		// Add custom columns and overwrite the 'title' column.
-		$columns['title']       = __( 'Title', 'cherry-portfolio' );
-		$columns[CHERRY_PORTFOLIO_NAME.'_category'] = __( 'Portfolio category', 'cherry-portfolio' );
-		$columns[CHERRY_PORTFOLIO_NAME.'_tag'] = __( 'Portfolio tag', 'cherry-portfolio' );
-		$columns['date']        = __( 'Date', 'cherry-portfolio' );
-		$columns['preview']   = __( 'Preview', 'cherry-portfolio' );
+		// Add custom columns.
+		$post_columns[ CHERRY_PORTFOLIO_NAME . '_category' ] = __( 'Portfolio category', 'cherry-portfolio' );
+		$post_columns[ CHERRY_PORTFOLIO_NAME . '_tag' ]      = __( 'Portfolio tag', 'cherry-portfolio' );
+		$post_columns['thumbnail']                           = __( 'Preview', 'cherry-portfolio' );
 
 		// Return the columns.
-		return $columns;
+		return $post_columns;
 	}
 
 	/**
@@ -160,7 +154,7 @@ class Cherry_Portfolio_Admin {
 
 			break;
 
-			case 'preview' :
+			case 'thumbnail' :
 
 				$thumb = get_the_post_thumbnail( $post_id, array( 75, 75 ) );
 				echo !empty( $thumb ) ? $thumb : '&mdash;';

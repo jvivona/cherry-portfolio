@@ -240,8 +240,8 @@ class Cherry_Portfolio_Data {
 	 * @since 1.0.0
 	 */
 	public function enqueue_styles() {
-		wp_enqueue_style( 'magnific-popup', plugins_url( 'public/assets/css/magnific-popup.css', __FILE__ ), array(), CHERRY_PORTFOLIO_VERSION );
-		wp_enqueue_style( 'swiper', plugins_url( 'public/assets/css/swiper.css', __FILE__ ), array(), CHERRY_PORTFOLIO_VERSION );
+		wp_enqueue_style( 'magnific-popup', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/css/magnific-popup.css', array(), CHERRY_PORTFOLIO_VERSION );
+		wp_enqueue_style( 'swiper', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/css/swiper.css', array(), CHERRY_PORTFOLIO_VERSION );
 		//wp_enqueue_style( 'cherry-portfolio', plugins_url( 'public/assets/css/style.css', __FILE__ ), array(), CHERRY_PORTFOLIO_VERSION );
 	}
 
@@ -251,12 +251,12 @@ class Cherry_Portfolio_Data {
 	 * @since 1.0.0
 	 */
 	public function enqueue_scripts() {
-		wp_enqueue_script( 'magnific-popup', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/jquery.magnific-popup.min.js', array( 'jquery' ), '1.0.0', true );
-		wp_enqueue_script( 'imagesloaded', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/imagesloaded.pkgd.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
-		wp_enqueue_script( 'isotope', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/isotope.pkgd.min.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
-		wp_enqueue_script( 'cherry-portfolio-layout-plugin', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/cherry-portfolio-layout-plugin.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
-		wp_enqueue_script( 'swiper', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/swiper.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
-		wp_enqueue_script( 'cherry-portfolio-script', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/cherry-portfolio-scripts.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
+		wp_enqueue_script( 'magnific-popup', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/min/jquery.magnific-popup.min.js', array( 'jquery' ), '1.0.0', true );
+		wp_enqueue_script( 'imagesloaded', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/min/imagesloaded.pkgd.min.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
+		wp_enqueue_script( 'isotope', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/min/isotope.pkgd.min.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
+		wp_enqueue_script( 'cherry-portfolio-layout-plugin', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/min/cherry-portfolio-layout-plugin.min.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
+		wp_enqueue_script( 'swiper', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/min/swiper.min.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
+		wp_enqueue_script( 'cherry-portfolio-script', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/min/cherry-portfolio-scripts.min.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
 
 		//ajax js object portfolio_type_ajax
 		wp_localize_script( 'cherry-portfolio-script', 'portfolio_type_ajax', array( 'url' => admin_url('admin-ajax.php') ) );
@@ -1103,9 +1103,10 @@ class Cherry_Portfolio_Data {
 	}
 
 	/**
-	 * Get option by name from theme options
+	 * Get option by name from theme options.
 	 *
 	 * @since  1.0.0
+	 * @since  1.0.4.2 Added the `cherry_portfolio_option_` filter.
 	 *
 	 * @uses   cherry_get_option  use cherry_get_option from Cherry framework if exist
 	 *
@@ -1114,10 +1115,19 @@ class Cherry_Portfolio_Data {
 	 * @return mixed            option value
 	 */
 	public static function cherry_portfolio_get_option( $name , $default = false ) {
+
 		if ( function_exists( 'cherry_get_option' ) ) {
 			$result = cherry_get_option( $name , $default );
-		return $result;
+
+			/**
+			 * Filter the value of an existing option.
+			 *
+			 * @since 1.0.4.2
+			 * @param mixed $value Value of the option.
+			 */
+			return apply_filters( 'cherry_portfolio_option_' . $name, $result );
 		}
+
 		return $default;
 	}
 
