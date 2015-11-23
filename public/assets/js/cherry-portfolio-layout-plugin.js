@@ -166,7 +166,7 @@
 				function ajaxGetNewContent( slug, page, order ){
 					var data = {
 						action: 'get_new_items',
-						value_slug: slug,
+						value_slug: ('' !== slug) ? slug : 'all',
 						value_pagination_page: page,
 						post_per_page: postPerPage,
 						loading_mode: portfolioContainer.data('loading-mode'),
@@ -339,7 +339,7 @@
 					var data = {
 						action: 'get_more_items',
 						value_pagination_page: page,
-						value_slug: slug,
+						value_slug: ('' !== slug) ? slug : 'all',
 						post_per_page: postPerPage,
 						list_layout: portfolioContainer.data('list-layout'),
 						order_settings: order,
