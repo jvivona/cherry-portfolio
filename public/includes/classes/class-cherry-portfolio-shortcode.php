@@ -44,7 +44,7 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 
 		// Register shortcode and add it to the dialog.
 		add_filter( 'cherry_shortcodes/data/shortcodes', array( $this, 'shortcodes' ) );
-		add_filter( 'cherry_templater/data/shortcodes',  array( $this, 'shortcodes' ) );
+		add_filter( 'cherry_templater/data/shortcodes', array( $this, 'shortcodes' ) );
 
 		add_filter( 'cherry_templater_target_dirs', array( $this, 'add_target_dir' ), 11 );
 		add_filter( 'cherry_templater_macros_buttons', array( $this, 'add_macros_buttons' ), 11, 2 );
@@ -58,13 +58,13 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 	 * @since 1.0.0
 	 */
 	public function register_shortcode() {
+
 		/**
 		 * Filters a shortcode name.
 		 *
 		 * @since 1.0.0
 		 * @param string $this->name Shortcode name.
 		 */
-
 		$tag = apply_filters( self::$name . '_shortcode_name', self::$name );
 
 		add_shortcode( 'cherry_' . $tag, array( $this, 'do_shortcode' ) );
@@ -79,56 +79,53 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 	 */
 	public function shortcodes( $shortcodes ) {
 		$shortcodes[ self::$name ] = array(
-			'name'  => __( 'Portfolio', 'cherry-portfolio' ), // Shortcode name.
+			'name'  => __( 'Portfolio', 'cherry-portfolio' ),
 			'desc'  => 'This is a Portfolio Shortcode',
-			'type'  => 'single', // Can be 'wrap' or 'single'. Example: [b]this is wrapped[/b], [this_is_single]
-			'group' => 'content', // Can be 'content', 'box', 'media' or 'other'. Groups can be mixed, for example 'content box'.
-			'atts'  => array( // List of shortcode params (attributes).
+			'type'  => 'single',
+			'group' => 'content',
+			'atts'  => array(
 				'listing_layout' => array(
 					'type'    => 'select',
 					'values'  => array(
-						'masonry-layout'	=> __('Masonry', 'cherry-portfolio'),
-						'grid-layout'		=> __('Grid', 'cherry-portfolio'),
-						'justified-layout'	=> __('Justified', 'cherry-portfolio'),
-						'list-layout'		=> __('List', 'cherry-portfolio'),
+						'masonry-layout'	=> __( 'Masonry', 'cherry-portfolio' ),
+						'grid-layout'		=> __( 'Grid', 'cherry-portfolio' ),
+						'justified-layout'	=> __( 'Justified', 'cherry-portfolio' ),
+						'list-layout'		=> __( 'List', 'cherry-portfolio' ),
 					),
 					'default' => 'masonry-layout',
 					'name'    => __( 'Portfolio listing layout', 'cherry-portfolio' ),
-					// 'desc'    => __( '', 'cherry-portfolio' ),
 				),
 				'loading_mode' => array(
 					'type'    => 'select',
 					'values'  => array(
-						'portfolio-ajax-pagination-mode'	=> __('Ajax pagination', 'cherry-portfolio'),
-						'portfolio-more-button-mode'		=> __('More button', 'cherry-portfolio'),
+						'portfolio-ajax-pagination-mode'	=> __( 'Ajax pagination', 'cherry-portfolio' ),
+						'portfolio-more-button-mode'		=> __( 'More button', 'cherry-portfolio' ),
 					),
 					'default' => 'portfolio-ajax-pagination-mode',
 					'name'    => __( 'Portfolio pagination type', 'cherry-portfolio' ),
-					// 'desc'    => __( '', 'cherry-portfolio' ),
 				),
 				'loading_animation' => array(
 					'type'    => 'select',
 					'values'  => array(
-						'loading-animation-fade'				=> __('Fade animation', 'cherry-portfolio'),
-						'loading-animation-scale'				=> __('Scale animation', 'cherry-portfolio'),
-						'loading-animation-move-up'				=> __('Move Up animation', 'cherry-portfolio'),
-						'loading-animation-flip'				=> __('Flip animation', 'cherry-portfolio'),
-						'loading-animation-helix'				=> __('Helix animation', 'cherry-portfolio'),
-						'loading-animation-fall-perspective'	=> __('Fall perspective animation', 'cherry-portfolio'),
+						'loading-animation-fade'				=> __( 'Fade animation', 'cherry-portfolio' ),
+						'loading-animation-scale'				=> __( 'Scale animation', 'cherry-portfolio' ),
+						'loading-animation-move-up'				=> __( 'Move Up animation', 'cherry-portfolio' ),
+						'loading-animation-flip'				=> __( 'Flip animation', 'cherry-portfolio' ),
+						'loading-animation-helix'				=> __( 'Helix animation', 'cherry-portfolio' ),
+						'loading-animation-fall-perspective'	=> __( 'Fall perspective animation', 'cherry-portfolio' ),
 					),
 					'default' => 'loading-animation-move-up',
 					'name'    => __( 'Portfolio items animation type', 'cherry-portfolio' ),
-					// 'desc'    => __( '', 'cherry-portfolio' ),
 				),
 				'posts_format' => array(
 					'type'    => 'select',
 					'values'  => array(
-						'post-format-all'		=> __('All formats', 'cherry-portfolio'),
-						'post-format-standard'	=> __('Standard format', 'cherry-portfolio'),
-						'post-format-image'		=> __('Image format', 'cherry-portfolio'),
-						'post-format-gallery'	=> __('Gallery format', 'cherry-portfolio'),
-						'post-format-audio'		=> __('Audio format', 'cherry-portfolio'),
-						'post-format-video'		=> __('Video format', 'cherry-portfolio'),
+						'post-format-all'		=> __( 'All formats', 'cherry-portfolio' ),
+						'post-format-standard'	=> __( 'Standard format', 'cherry-portfolio' ),
+						'post-format-image'		=> __( 'Image format', 'cherry-portfolio' ),
+						'post-format-gallery'	=> __( 'Gallery format', 'cherry-portfolio' ),
+						'post-format-audio'		=> __( 'Audio format', 'cherry-portfolio' ),
+						'post-format-video'		=> __( 'Video format', 'cherry-portfolio' ),
 					),
 					'default' => 'post-format-all',
 					'name'    => __( 'Post format', 'cherry-portfolio' ),
@@ -176,23 +173,23 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 				'template' => array(
 					'default' => 'masonry-default.tmpl',
 					'name'    => __( 'Template', 'cherry-portfolio' ),
-					'desc'    => __( 'Content template', 'cherry-portfolio' )
+					'desc'    => __( 'Content template', 'cherry-portfolio' ),
 				),
 				'custom_class' => array(
 					'default' => '',
 					'name'    => __( 'Class', 'cherry-portfolio' ),
-					'desc'    => __( 'Extra CSS class', 'cherry-portfolio' )
+					'desc'    => __( 'Extra CSS class', 'cherry-portfolio' ),
 				),
 			),
-			'icon'     => 'h-square', // Custom icon (font-awesome).
-			'function' => array( $this, 'do_shortcode' ) // Name of shortcode function.
+			'icon'     => 'h-square',
+			'function' => array( $this, 'do_shortcode' ),
 		);
 
 		return $shortcodes;
 	}
 
 	/**
-	 * Adds team template directory to shortcodes templater
+	 * Adds team template directory to shortcodes templater.
 	 *
 	 * @param array  $target_dirs  existing target dirs
 	 */
@@ -243,61 +240,61 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 				'id'    => 'cherry_taxonomy',
 				'value' => __( 'Taxonomy', 'cherry-portfolio' ),
 				'open'  => '%%TAXONOMY="category"%%',
-				'close' => ''
+				'close' => '',
 			),
 			'date' => array(
 				'id'    => 'cherry_date',
 				'value' => __( 'Date', 'cherry-portfolio' ),
 				'open'  => '%%DATE="Y - M - d"%%',
-				'close' => ''
+				'close' => '',
 			),
 			'author' => array(
 				'id'    => 'cherry_author',
 				'value' => __( 'Author', 'cherry-portfolio' ),
 				'open'  => '%%AUTHOR%%',
-				'close' => ''
+				'close' => '',
 			),
 			'comments' => array(
 				'id'    => 'cherry_comments',
 				'value' => __( 'Comments', 'cherry-portfolio' ),
 				'open'  => '%%COMMENTS="25"%%',
-				'close' => ''
+				'close' => '',
 			),
 			'externallink' => array(
 				'id'    => 'cherry_externallink',
 				'value' => __( 'External link', 'cherry-portfolio' ),
 				'open'  => '%%EXTERNALLINK%%',
-				'close' => ''
+				'close' => '',
 			),
 			'zoomlink' => array(
 				'id'    => 'cherry_zoomlink',
 				'value' => __( 'Zoom link', 'cherry-portfolio' ),
 				'open'  => '%%ZOOMLINK="Zomm"%%',
-				'close' => ''
+				'close' => '',
 			),
 			'permalink' => array(
 				'id'    => 'cherry_permalink',
 				'value' => __( 'Permalink', 'cherry-portfolio' ),
 				'open'  => '%%PERMALINK="Permalink"%%',
-				'close' => ''
+				'close' => '',
 			),
 			'permalinkurl' => array(
 				'id'    => 'cherry_permalink_url',
 				'value' => __( 'Permalink url', 'cherry-portfolio' ),
 				'open'  => '%%URL%%',
-				'close' => ''
+				'close' => '',
 			),
 			'gallerythumbnails' => array(
 				'id'    => 'cherry_gallery_thumbnails',
 				'value' => __( 'Gallery thumbnail', 'cherry-portfolio' ),
 				'open'  => '%%GALLERYTHUMBNAILS%%',
-				'close' => ''
+				'close' => '',
 			),
 			'thumbnailscount' => array(
 				'id'    => 'cherry_gallery_thumbnails_count',
 				'value' => __( 'Thumbnails count', 'cherry-portfolio' ),
 				'open'  => '%%THUMBNAILSCOUNT%%',
-				'close' => ''
+				'close' => '',
 			),
 		);
 
@@ -314,6 +311,7 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 	 * @return string
 	 */
 	public function do_shortcode( $atts, $content = null, $shortcode = '' ) {
+
 		// Set up the default arguments.
 		$defaults = array(
 			'listing_layout'			=> 'masonry-layout',
@@ -327,7 +325,7 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 			'echo'						=> false,
 			'template'					=> '',
 			'posts_format'				=> 'post-format-all',
-			'custom_class'				=> ''
+			'custom_class'				=> '',
 		);
 
 		/**
@@ -338,8 +336,8 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 
 		$atts = shortcode_atts( $defaults, $atts, $shortcode );
 
-		$atts['filter_visible']	= ( bool ) ( $atts['filter_visible'] === 'yes' ) ? true : false;
-		$atts['order_filter_visible']	= ( bool ) ( $atts['order_filter_visible'] === 'yes' ) ? true : false;
+		$atts['filter_visible']	= ( bool ) ( 'yes' === $atts['filter_visible'] ) ? true : false;
+		$atts['order_filter_visible'] = ( bool ) ( 'yes' === $atts['order_filter_visible'] ) ? true : false;
 
 		// Make sure we return and don't echo.
 		$atts['echo'] = false;
@@ -357,8 +355,9 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 	public static function get_instance() {
 
 		// If the single instance hasn't been set, set it now.
-		if ( null == self::$instance )
+		if ( null == self::$instance ) {
 			self::$instance = new self;
+		}
 
 		return self::$instance;
 	}

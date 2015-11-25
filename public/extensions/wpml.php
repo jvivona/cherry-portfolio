@@ -2,7 +2,7 @@
 /**
  * WPML-plugin compatibility.
  *
- * @package   Cherry_Portfolio
+ * @package   Cherry Portfolio
  * @author    Cherry Team
  * @license   GPL-2.0+
  * @link      http://www.cherryframework.com/

@@ -1,8 +1,8 @@
 <?php
 /**
- * Cherry Testimonials
+ * Portfolio page template.
  *
- * @package   Cherry_Testimonials
+ * @package   Cherry Portfolio
  * @author    Cherry Team
  * @license   GPL-2.0+
  * @link      http://www.cherryframework.com/
@@ -57,11 +57,11 @@ class Cherry_Portfolio_Page_Template {
 		$this->templates = array(
 			'template-portfolio.php' => __( 'Portfolio', 'cherry-portfolio' ),
 		);
+
 		// Adding support for theme templates to be merged and shown in dropdown.
 		$templates = wp_get_theme()->get_page_templates();
 
 		$templates = array_merge( $templates, $this->templates );
-
 	}
 
 
@@ -106,7 +106,7 @@ class Cherry_Portfolio_Page_Template {
 	public function view_template( $template ) {
 		global $post;
 
-		if ( is_post_type_archive( CHERRY_PORTFOLIO_NAME ) || is_tax( array( CHERRY_PORTFOLIO_NAME.'_category', CHERRY_PORTFOLIO_NAME.'_tag' ) ) ) {
+		if ( is_post_type_archive( CHERRY_PORTFOLIO_NAME ) || is_tax( array( CHERRY_PORTFOLIO_NAME . '_category', CHERRY_PORTFOLIO_NAME . '_tag' ) ) ) {
 
 			$file = trailingslashit( CHERRY_PORTFOLIO_DIR ) . 'templates/archive-portfolio.php';
 
@@ -121,7 +121,7 @@ class Cherry_Portfolio_Page_Template {
 
 		$page_template_meta = get_post_meta( $post->ID, '_wp_page_template', true );
 
-		if ( !isset( $this->templates[ $page_template_meta ] ) ) {
+		if ( ! isset( $this->templates[ $page_template_meta ] ) ) {
 			return $template;
 		}
 
@@ -159,8 +159,9 @@ class Cherry_Portfolio_Page_Template {
 	public static function get_instance() {
 
 		// If the single instance hasn't been set, set it now.
-		if ( null == self::$instance )
+		if ( null == self::$instance ){
 			self::$instance = new self;
+		}
 
 		return self::$instance;
 	}

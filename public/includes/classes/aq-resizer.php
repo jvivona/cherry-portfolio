@@ -1,5 +1,7 @@
 <?php
 
+// @codingStandardsIgnoreStart
+
 /**
  * Title         : Aqua Resizer
  * Description   : Resizes WordPress images on the fly
@@ -188,10 +190,6 @@ if(!class_exists('Aq_Resize')) {
     }
 }
 
-
-
-
-
 if(!function_exists('aq_resize')) {
 
     /**
@@ -204,4 +202,4 @@ if(!function_exists('aq_resize')) {
     }
 }
 
-
+// @codingStandardsIgnoreEnd

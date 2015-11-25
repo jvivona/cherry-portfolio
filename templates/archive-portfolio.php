@@ -7,6 +7,7 @@
  * @package Cherry_Portfolio
  * @since   1.0.0
  */
+
 ?>
 <article <?php if ( function_exists( 'cherry_attr' ) ) cherry_attr( 'post' ); ?>>
 

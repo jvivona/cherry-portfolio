@@ -10,15 +10,21 @@
  * License:     GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  * Domain Path: /languages
+ *
+ * @package   Cherry Portfolio
+ * @author    Cherry Team
+ * @license   GPL-2.0+
+ * @link      http://www.cherryframework.com/
+ * @copyright 2014 Cherry Team
  */
 
 // If this file is called directly, abort.
-if ( !defined( 'WPINC' ) ) {
+if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
 // If class 'Cherry_Portfolio' not exists.
-if ( !class_exists( 'Cherry_Portfolio' ) ) {
+if ( ! class_exists( 'Cherry_Portfolio' ) ) {
 
 	/**
 	 * Sets up and initializes the Cherry Portfolio plugin.
@@ -41,34 +47,31 @@ if ( !class_exists( 'Cherry_Portfolio' ) ) {
 		 * @since 1.0.0
 		 */
 		public function __construct() {
+
 			// Set the constants needed by the plugin.
 			$this->constants();
+
 			// Load the functions files.
 			$this->includes();
 
-			//add_action( 'plugins_loaded', array( $this, 'constants' ), 1 );
-
 			// Internationalize the text strings used.
-			add_action( 'plugins_loaded', array( $this, 'lang' ),      2 );
-
-			// Load the functions files.
-			//add_action( 'plugins_loaded', array( $this, 'includes' ),  3 );
+			add_action( 'plugins_loaded', array( $this, 'lang' ), 2 );
 
 			// Load the admin files.
-			add_action( 'plugins_loaded', array( $this, 'admin' ),     4 );
+			add_action( 'plugins_loaded', array( $this, 'admin' ), 4 );
 
 			// Load the extensions files.
 			add_action( 'after_setup_theme', array( $this, 'extensions' ), 11 );
 
 			// Load public-facing style sheet.
-			add_action( 'wp_enqueue_scripts',         array( $this, 'enqueue_styles' ) );
+			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 			add_filter( 'cherry_compiler_static_css', array( $this, 'add_style_to_compiler' ) );
 
 			// Load public-facing JavaScript.
 			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 
 			// Register activation and deactivation hook.
-			register_activation_hook( __FILE__, array( $this, 'activation'     ) );
+			register_activation_hook( __FILE__, array( $this, 'activation' ) );
 			register_deactivation_hook( __FILE__, array( $this, 'deactivation' ) );
 		}
 
@@ -130,7 +133,7 @@ if ( !class_exists( 'Cherry_Portfolio' ) ) {
 		function includes() {
 			require_once( trailingslashit( CHERRY_PORTFOLIO_DIR ) . 'public/includes/classes/class-cherry-portfolio-registration.php' );
 			require_once( trailingslashit( CHERRY_PORTFOLIO_DIR ) . 'public/includes/classes/class-cherry-portfolio-page-template.php' );
-			require_once( trailingslashit( CHERRY_PORTFOLIO_DIR ) . 'public/includes/classes/aq_resizer.php' );
+			require_once( trailingslashit( CHERRY_PORTFOLIO_DIR ) . 'public/includes/classes/aq-resizer.php' );
 			require_once( trailingslashit( CHERRY_PORTFOLIO_DIR ) . 'public/includes/classes/class-cherry-portfolio-options.php' );
 			require_once( trailingslashit( CHERRY_PORTFOLIO_DIR ) . 'public/includes/classes/class-cherry-portfolio-data.php' );
 			require_once( trailingslashit( CHERRY_PORTFOLIO_DIR ) . 'public/includes/classes/class-cherry-portfolio-shortcode.php' );
@@ -151,6 +154,7 @@ if ( !class_exists( 'Cherry_Portfolio' ) ) {
 		 * @since 1.0.0
 		 */
 		function admin() {
+
 			if ( is_admin() ) {
 				require_once( CHERRY_PORTFOLIO_DIR . 'admin/includes/class-cherry-portfolio-admin.php' );
 				require_once( CHERRY_PORTFOLIO_DIR . 'admin/includes/class-cherry-update/class-cherry-plugin-update.php' );
@@ -159,7 +163,7 @@ if ( !class_exists( 'Cherry_Portfolio' ) ) {
 				$Cherry_Plugin_Update -> init( array(
 						'version'			=> CHERRY_PORTFOLIO_VERSION,
 						'slug'				=> CHERRY_PORTFOLIO_SLUG,
-						'repository_name'	=> CHERRY_PORTFOLIO_SLUG
+						'repository_name'	=> CHERRY_PORTFOLIO_SLUG,
 				));
 			}
 		}
@@ -183,8 +187,6 @@ if ( !class_exists( 'Cherry_Portfolio' ) ) {
 		 * @since 1.0.0
 		 */
 		public function enqueue_styles() {
-			//wp_enqueue_style( 'magnific-popup', plugins_url( 'public/assets/css/magnific-popup.css', __FILE__ ), array(), CHERRY_PORTFOLIO_VERSION );
-			//wp_enqueue_style( 'swiper', plugins_url( 'public/assets/css/swiper.css', __FILE__ ), array(), CHERRY_PORTFOLIO_VERSION );
 			wp_enqueue_style( 'cherry-portfolio', plugins_url( 'public/assets/css/style.css', __FILE__ ), array(), CHERRY_PORTFOLIO_VERSION );
 		}
 
@@ -193,17 +195,7 @@ if ( !class_exists( 'Cherry_Portfolio' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		public function enqueue_scripts() {
-			/*wp_enqueue_script( 'magnific-popup', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/jquery.magnific-popup.min.js', array( 'jquery' ), '1.0.0', true );
-			wp_enqueue_script( 'imagesloaded', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/imagesloaded.pkgd.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
-			wp_enqueue_script( 'isotope', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/isotope.pkgd.min.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
-			wp_enqueue_script( 'cherry-portfolio-layout-plugin', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/cherry-portfolio-layout-plugin.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
-			wp_enqueue_script( 'swiper', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/swiper.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
-			wp_enqueue_script( 'cherry-portfolio-script', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'public/assets/js/cherry-portfolio-scripts.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION, true );
-
-			//ajax js object portfolio_type_ajax
-			wp_localize_script( 'cherry-portfolio-script', 'portfolio_type_ajax', array( 'url' => admin_url('admin-ajax.php') ) );*/
-		}
+		public function enqueue_scripts() {}
 
 		/**
 		 * Pass style handle to CSS compiler.
@@ -251,8 +243,9 @@ if ( !class_exists( 'Cherry_Portfolio' ) ) {
 		public static function get_instance() {
 
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance )
+			if ( null == self::$instance ){
 				self::$instance = new self;
+			}
 
 			return self::$instance;
 		}

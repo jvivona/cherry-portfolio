@@ -2,13 +2,19 @@
 /**
  * Sets up the admin functionality for the plugin.
  *
- * @package   Cherry_Portfolio_Admin
+ * @package   Cherry Portfolio
  * @author    Cherry Team
  * @license   GPL-2.0+
  * @link      http://www.cherryframework.com/
  * @copyright 2014 Cherry Team
  */
 
+
+/**
+ * Cherry Portfolio Admin class.
+ *
+ * @since  1.0.0
+ */
 class Cherry_Portfolio_Admin {
 
 	/**
@@ -18,6 +24,12 @@ class Cherry_Portfolio_Admin {
 	 * @var   object
 	 */
 	private static $instance = null;
+
+	/**
+	 * Cherry_Portfolio_Meta_Boxes class object.
+	 *
+	 * @var null
+	 */
 	public $portfolio_meta_boxes = null;
 
 	/**
@@ -27,8 +39,9 @@ class Cherry_Portfolio_Admin {
 	 * @return void
 	 */
 	public function __construct() {
+
 		// Load post meta boxes on the post editing screen.
-		add_action( 'load-post.php',     array( $this, 'load_post_meta_boxes' ) );
+		add_action( 'load-post.php', array( $this, 'load_post_meta_boxes' ) );
 		add_action( 'load-post-new.php', array( $this, 'load_post_meta_boxes' ) );
 
 		add_action( 'wp_ajax_get_new_format_metabox', array( $this, 'load_post_meta_boxes' ), 10 );
@@ -37,11 +50,11 @@ class Cherry_Portfolio_Admin {
 		add_action( 'load-edit.php', array( $this, 'load_edit' ) );
 
 		// Modify the columns on the "Portfolio" screen.
-		add_filter( 'manage_edit-portfolio_columns',        array( $this, 'edit_portfolio_columns'   ) );
+		add_filter( 'manage_edit-portfolio_columns', array( $this, 'edit_portfolio_columns' ) );
 		add_action( 'manage_portfolio_posts_custom_column', array( $this, 'manage_portfolio_columns' ), 10, 2 );
 
-		add_action( 'admin_enqueue_scripts',  array( $this, 'enqueue_scripts' ) );
-		add_action( 'admin_enqueue_scripts',  array( $this, 'enqueue_styles' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 
 		add_action( 'wp_ajax_get_new_format_metabox', array( $this, 'get_new_format_metabox' ), 20 );
 	}
@@ -68,7 +81,7 @@ class Cherry_Portfolio_Admin {
 	public function load_edit() {
 		$screen = get_current_screen();
 
-		if ( !empty( $screen->post_type ) && 'portfolio' === $screen->post_type ) {
+		if ( ! empty( $screen->post_type ) && 'portfolio' === $screen->post_type ) {
 			add_action( 'admin_head', array( $this, 'print_styles' ) );
 		}
 	}
@@ -99,7 +112,7 @@ class Cherry_Portfolio_Admin {
 		// Add custom columns.
 		$post_columns[ CHERRY_PORTFOLIO_NAME . '_category' ] = __( 'Portfolio category', 'cherry-portfolio' );
 		$post_columns[ CHERRY_PORTFOLIO_NAME . '_tag' ]      = __( 'Portfolio tag', 'cherry-portfolio' );
-		$post_columns['thumbnail']                           = __( 'Preview', 'cherry-portfolio' );
+		$post_columns['thumbnail'] = __( 'Preview', 'cherry-portfolio' );
 
 		// Return the columns.
 		return $post_columns;
@@ -118,37 +131,39 @@ class Cherry_Portfolio_Admin {
 
 			case CHERRY_PORTFOLIO_NAME.'_category' :
 
-				$post_categories = is_wp_error( get_the_terms($post_id, CHERRY_PORTFOLIO_NAME.'_category') ) ?'': get_the_terms($post_id, CHERRY_PORTFOLIO_NAME.'_category');
-				if( $post_categories ){
+				$post_categories = is_wp_error( get_the_terms( $post_id, CHERRY_PORTFOLIO_NAME . '_category' ) ) ? '' : get_the_terms( $post_id, CHERRY_PORTFOLIO_NAME . '_category' );
+
+				if ( $post_categories ) {
 					$category_name_list = '';
 					$count = 1;
-						foreach ($post_categories as $category => $category_value) {
+
+						foreach ( $post_categories as $category => $category_value ) {
 							$category_name_list .= $category_value->name;
 							( $count < count( $post_categories ) ) ? $category_name_list .= ', ':'';
-							$count++;
-
+							$count ++;
 						}
 					echo $category_name_list;
-				}else{
+				} else {
 					echo __( 'Post has no categories', 'cherry-portfolio' );
 				}
 
 			break;
 
-			case CHERRY_PORTFOLIO_NAME.'_tag' :
+			case CHERRY_PORTFOLIO_NAME . '_tag' :
 
-				$post_tags = is_wp_error( get_the_terms($post_id, CHERRY_PORTFOLIO_NAME.'_tag') ) ?'': get_the_terms($post_id, CHERRY_PORTFOLIO_NAME.'_tag');
-				if( $post_tags ){
+				$post_tags = is_wp_error( get_the_terms( $post_id, CHERRY_PORTFOLIO_NAME . '_tag' ) ) ? '': get_the_terms( $post_id, CHERRY_PORTFOLIO_NAME . '_tag' );
+
+				if( $post_tags ) {
 					$tags_name_list = '';
 					$count = 1;
-						foreach ($post_tags as $tag => $tag_value) {
-							$tags_name_list .= $tag_value->name;
-							( $count < count( $post_tags ) ) ? $tags_name_list .= ', ':'';
-							$count++;
 
+						foreach ( $post_tags as $tag => $tag_value ) {
+							$tags_name_list .= $tag_value->name;
+							( $count < count( $post_tags ) ) ? $tags_name_list .= ', ' : '';
+							$count ++;
 						}
 					echo $tags_name_list;
-				}else{
+				} else {
 					echo __( 'Post has no tags', 'cherry-portfolio' );
 				}
 
@@ -157,30 +172,39 @@ class Cherry_Portfolio_Admin {
 			case 'thumbnail' :
 
 				$thumb = get_the_post_thumbnail( $post_id, array( 75, 75 ) );
-				echo !empty( $thumb ) ? $thumb : '&mdash;';
+				echo ! empty( $thumb ) ? $thumb : '&mdash;';
 
-			break;
-
-			default :
 			break;
 		}
 	}
 
+	/**
+	 * Enqueue admin scripts function.
+	 *
+	 * @return void
+	 */
 	public function enqueue_scripts() {
 		$screen = get_current_screen();
-		if ( !empty( $screen->post_type ) && 'portfolio' === $screen->post_type ) {
+
+		if ( ! empty( $screen->post_type ) && 'portfolio' === $screen->post_type ) {
 			wp_enqueue_script( 'cherry-portfolio-admin-scripts', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'admin/assets/js/cherry-portfolio-admin-scripts.js', array( 'jquery' ), CHERRY_PORTFOLIO_VERSION );
 			$option_inteface_builder = new Cherry_Interface_Builder();
 			$option_inteface_builder->enqueue_builder_scripts();
 
-			//ajax js object portfolio_type_ajax
+			//ajax js object portfolio_type_ajax.
 			wp_localize_script( 'cherry-portfolio-admin-scripts', 'portfolio_post_format_ajax', array( 'url' => admin_url('admin-ajax.php') ) );
 		}
 	}
 
+	/**
+	 * Enqueue admin styles function.
+	 *
+	 * @return void
+	 */
 	public function enqueue_styles() {
 		$screen = get_current_screen();
-		if ( !empty( $screen->post_type ) && 'portfolio' === $screen->post_type ) {
+
+		if ( ! empty( $screen->post_type ) && 'portfolio' === $screen->post_type ) {
 			$option_inteface_builder = new Cherry_Interface_Builder();
 			$option_inteface_builder->enqueue_builder_styles();
 
@@ -188,12 +212,18 @@ class Cherry_Portfolio_Admin {
 		}
 	}
 
-
+	/**
+	 * Render new post format metabox content.
+	 *
+	 * @return void
+	 */
 	public function get_new_format_metabox() {
-		if ( !empty($_POST) && array_key_exists('post_format', $_POST) && array_key_exists('post_id', $_POST) ) {
+
+		if ( ! empty( $_POST ) && array_key_exists( 'post_format', $_POST ) && array_key_exists( 'post_id', $_POST ) ) {
 			$post_format = $_POST['post_format'];
 			$post_id = $_POST['post_id'];
 			$output = $this->portfolio_meta_boxes->format_metabox_builder( $post_id, $post_format );
+
 			echo $output;
 			exit;
 		}
@@ -217,4 +247,3 @@ class Cherry_Portfolio_Admin {
 }
 
 Cherry_Portfolio_Admin::get_instance();
-
