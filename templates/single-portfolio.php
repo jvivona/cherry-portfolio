@@ -2,13 +2,17 @@
 /**
  * The Template for displaying single CPT Portfolio.
  *
+ * @package Cherry_Portfolio
+ * @since   1.0.0
  */
 
 while ( have_posts() ) :
 
 		the_post(); ?>
 
-		<article <?php if ( function_exists( 'cherry_attr' ) ) cherry_attr( 'post' ); ?>>
+		<article <?php if ( function_exists( 'cherry_attr' ) ) {
+			cherry_attr( 'post' );
+		} ?>>
 
 		<?php
 

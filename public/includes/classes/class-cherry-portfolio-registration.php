@@ -85,7 +85,7 @@ class Cherry_Portfolio_Registration {
 			'supports'			=> $supports,
 			'public'			=> true,
 			'capability_type'	=> 'post',
-			'rewrite'			=> array( 'slug' => 'portfolio-archive', ),
+			'rewrite'			=> array( 'slug' => 'portfolio-archive' ),
 			'menu_position'		=> null,
 			'menu_icon'			=> ( version_compare( $GLOBALS['wp_version'], '3.8', '>=' ) ) ? 'dashicons-portfolio' : '',
 			'can_export'		=> true,
@@ -123,7 +123,6 @@ class Cherry_Portfolio_Registration {
 	 * @since 1.0.0
 	 * @link http://codex.wordpress.org/Function_Reference/register_taxonomy
 	 */
-
 	public static function register_taxonomy() {
 
 		// Register the category taxonomy.
@@ -167,7 +166,7 @@ class Cherry_Portfolio_Registration {
 	public static function get_instance() {
 
 		// If the single instance hasn't been set, set it now.
-		if ( null == self::$instance ){
+		if ( null == self::$instance ) {
 			self::$instance = new self;
 		}
 

@@ -45,7 +45,7 @@ function cherry_portfolio_get_wpml_translated_tag( $tags ) {
 function cherry_portfolio_get_wpml_translated_term_slug( $values, $taxonomy ) {
 	$terms_translated_ID = array();
 
-	foreach ( (array)$values as $slug ) {
+	foreach ( ( array ) $values as $slug ) {
 		$term = get_term_by( 'slug', $slug, $taxonomy );
 
 		if ( ! empty( $term ) && is_object( $term ) ) {

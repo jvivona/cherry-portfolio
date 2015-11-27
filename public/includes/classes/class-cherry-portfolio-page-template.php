@@ -86,7 +86,7 @@ class Cherry_Portfolio_Page_Template {
 		}
 
 		// Since we've updated the cache, we need to delete the old cache.
-		wp_cache_delete( $cache_key , 'themes');
+		wp_cache_delete( $cache_key , 'themes' );
 
 		// Now add our template to the list of templates by merging our templates
 		// with the existing templates array from the cache.
@@ -159,7 +159,7 @@ class Cherry_Portfolio_Page_Template {
 	public static function get_instance() {
 
 		// If the single instance hasn't been set, set it now.
-		if ( null == self::$instance ){
+		if ( null == self::$instance ) {
 			self::$instance = new self;
 		}
 

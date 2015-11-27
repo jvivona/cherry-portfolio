@@ -9,7 +9,6 @@
  * @copyright 2014 Cherry Team
  */
 
-
 /**
  * Cherry Portfolio Admin class.
  *
@@ -67,7 +66,7 @@ class Cherry_Portfolio_Admin {
 	public function load_post_meta_boxes() {
 		$screen = get_current_screen();
 
-		if ( ( !empty( $screen->post_type ) && 'portfolio' === $screen->post_type ) || ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
+		if ( ( ! empty( $screen->post_type ) && 'portfolio' === $screen->post_type ) || ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
 			require_once( trailingslashit( CHERRY_PORTFOLIO_DIR ) . 'admin/includes/class-cherry-portfolio-meta-boxes.php' );
 			$this->portfolio_meta_boxes = new Cherry_Portfolio_Meta_Boxes;
 		}
@@ -91,8 +90,8 @@ class Cherry_Portfolio_Admin {
 	 *
 	 * @since 1.0.0
 	 */
-	public function print_styles() { ?>
-		<style type="text/css">
+	public function print_styles() {
+		?><style type="text/css">
 		.edit-php .wp-list-table td.thumbnail.column-thumbnail,
 		.edit-php .wp-list-table th.manage-column.column-thumbnail {
 			text-align: center;
@@ -101,17 +100,17 @@ class Cherry_Portfolio_Admin {
 	<?php }
 
 	/**
-	 * Filters the columns on the "Portfolio list" screen.
+	 * Filters the columns on the `Portfolio list` screen.
 	 *
 	 * @since  1.0.0
-	 * @param  array $post_columns
+	 * @param  array $post_columns Post columns.
 	 * @return array
 	 */
 	public function edit_portfolio_columns( $post_columns ) {
 
 		// Add custom columns.
 		$post_columns[ CHERRY_PORTFOLIO_NAME . '_category' ] = __( 'Portfolio category', 'cherry-portfolio' );
-		$post_columns[ CHERRY_PORTFOLIO_NAME . '_tag' ]      = __( 'Portfolio tag', 'cherry-portfolio' );
+		$post_columns[ CHERRY_PORTFOLIO_NAME . '_tag' ] = __( 'Portfolio tag', 'cherry-portfolio' );
 		$post_columns['thumbnail'] = __( 'Preview', 'cherry-portfolio' );
 
 		// Return the columns.
@@ -119,17 +118,17 @@ class Cherry_Portfolio_Admin {
 	}
 
 	/**
-	 * Add output for custom columns on the "menu items" screen.
+	 * Add output for custom columns on the `menu items` screen.
 	 *
 	 * @since  1.0.0
-	 * @param  string $column
-	 * @param  int    $post_id
+	 * @param  string $column Column name.
+	 * @param  int    $post_id Post id value.
 	 */
 	public function manage_portfolio_columns( $column, $post_id ) {
 
-		switch( $column ) {
+		switch ( $column ) {
 
-			case CHERRY_PORTFOLIO_NAME.'_category' :
+			case CHERRY_PORTFOLIO_NAME . '_category' :
 
 				$post_categories = is_wp_error( get_the_terms( $post_id, CHERRY_PORTFOLIO_NAME . '_category' ) ) ? '' : get_the_terms( $post_id, CHERRY_PORTFOLIO_NAME . '_category' );
 
@@ -139,7 +138,7 @@ class Cherry_Portfolio_Admin {
 
 						foreach ( $post_categories as $category => $category_value ) {
 							$category_name_list .= $category_value->name;
-							( $count < count( $post_categories ) ) ? $category_name_list .= ', ':'';
+							( $count < count( $post_categories ) ) ? $category_name_list .= ', ' : '';
 							$count ++;
 						}
 					echo $category_name_list;
@@ -153,7 +152,7 @@ class Cherry_Portfolio_Admin {
 
 				$post_tags = is_wp_error( get_the_terms( $post_id, CHERRY_PORTFOLIO_NAME . '_tag' ) ) ? '': get_the_terms( $post_id, CHERRY_PORTFOLIO_NAME . '_tag' );
 
-				if( $post_tags ) {
+				if ( $post_tags ) {
 					$tags_name_list = '';
 					$count = 1;
 
@@ -191,8 +190,8 @@ class Cherry_Portfolio_Admin {
 			$option_inteface_builder = new Cherry_Interface_Builder();
 			$option_inteface_builder->enqueue_builder_scripts();
 
-			//ajax js object portfolio_type_ajax.
-			wp_localize_script( 'cherry-portfolio-admin-scripts', 'portfolio_post_format_ajax', array( 'url' => admin_url('admin-ajax.php') ) );
+			// Ajax js object portfolio_type_ajax.
+			wp_localize_script( 'cherry-portfolio-admin-scripts', 'portfolio_post_format_ajax', array( 'url' => admin_url( 'admin-ajax.php' ) ) );
 		}
 	}
 

@@ -74,8 +74,8 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 	 * Filter to modify original shortcodes data and add [$this->name] shortcode.
 	 *
 	 * @since  1.0.0
-	 * @param  array   $shortcodes Original plugin shortcodes.
-	 * @return array               Modified array.
+	 * @param  array $shortcodes Original plugin shortcodes.
+	 * @return array             Modified array.
 	 */
 	public function shortcodes( $shortcodes ) {
 		$shortcodes[ self::$name ] = array(
@@ -191,7 +191,7 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 	/**
 	 * Adds team template directory to shortcodes templater.
 	 *
-	 * @param array  $target_dirs  existing target dirs
+	 * @param array $target_dirs Existing target dirs.
 	 */
 	public function add_target_dir( $target_dirs ) {
 
@@ -205,8 +205,8 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param array  $macros    current buttons array
-	 * @param string $shortcode shortcode name
+	 * @param array  $macros    Current buttons array.
+	 * @param string $shortcode Shortcode name.
 	 */
 	public function add_macros_buttons( $macros_buttons, $shortcode ) {
 
@@ -361,7 +361,6 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 
 		return self::$instance;
 	}
-
 }
 
 Cherry_Portfolio_Shortcode::get_instance();

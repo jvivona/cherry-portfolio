@@ -127,11 +127,11 @@ if ( ! class_exists( 'Portfolio_Options' ) ) {
 				'display_input'	=> false,
 				'options'	=> array(
 					'portfolio-ajax-pagination-mode' => array(
-						'label'		=> __( 'Ajax pagination', 'cherry-portfolio'),
+						'label'		=> __( 'Ajax pagination', 'cherry-portfolio' ),
 						'img_src'	=> CHERRY_PORTFOLIO_URI . 'public/assets/images/svg/loading-mode-ajax-pagination.svg',
 					),
 					'portfolio-more-button-mode' => array(
-						'label'		=> __( 'More button', 'cherry-portfolio'),
+						'label'		=> __( 'More button', 'cherry-portfolio' ),
 						'img_src'	=> CHERRY_PORTFOLIO_URI . 'public/assets/images/svg/loading-mode-ajax-more-button.svg',
 					),
 				),
@@ -226,7 +226,7 @@ if ( ! class_exists( 'Portfolio_Options' ) ) {
 				'label'			=> '',
 				'description'	=> '',
 				'multiple'		=> true,
-				'value'			=> array('select-1','select-2'),
+				'value'			=> array( 'select-1','select-2' ),
 				'class'			=> 'cherry-multi-select',
 				'options'		=> $this->get_terms( CHERRY_PORTFOLIO_NAME . '_tag', 'slug' ),
 				'master'		=> 'portfolio-filter-type-tag',
@@ -235,13 +235,13 @@ if ( ! class_exists( 'Portfolio_Options' ) ) {
 				'type'			=> 'switcher',
 				'title'			=> __( 'Filters', 'cherry-portfolio' ),
 				'description'	=> __( 'Enable/disable listing filters', 'cherry-portfolio' ),
-				'value'			=> 'true'
+				'value'			=> 'true',
 			);
 			$portfolio_options['portfolio-order-filter-visible'] = array(
 				'type'			=> 'switcher',
 				'title'			=> __( 'Order filters', 'cherry-portfolio' ),
 				'description'	=> __( 'Enable/disable order filters', 'cherry-portfolio' ),
-				'value'			=> 'false'
+				'value'			=> 'false',
 			);
 			$portfolio_options['portfolio-order-filter-default-value'] = array(
 				'type'			=> 'radio',
@@ -409,7 +409,8 @@ if ( ! class_exists( 'Portfolio_Options' ) ) {
 		 * Adds a option in `Grid -> Layouts` subsection.
 		 *
 		 * @since 1.0.0
-		 * @param array $sections
+		 * @param array $layouts_options Grid layouts options.
+		 * @return string
 		 */
 		public function add_cherry_options( $layouts_options ) {
 			$layouts_options['single-portfolio-layout'] = array(

@@ -9,6 +9,11 @@
  * @copyright 2014 Cherry Team
  */
 
+/**
+ * Cherry Portfolio Metaboxes init.
+ *
+ * @since  1.0.0
+ */
 class Cherry_Portfolio_Meta_Boxes {
 
 	/**
@@ -69,22 +74,22 @@ class Cherry_Portfolio_Meta_Boxes {
 					'id'			=> 'external-link-text',
 					'type'			=> 'text',
 					'label'			=> __( 'Link text:', 'cherry-portfolio' ),
-					'description'	=> __( "Enter link text.", 'cherry-portfolio' ),
+					'description'	=> __( 'Enter link text.', 'cherry-portfolio' ),
 					'value'			=> '',
 				),
 				array(
 					'id'			=> 'external-link-target',
 					'type'			=> 'radio',
-					'label'			=> __('Link target', 'cherry-portfolio'),
-					'description'	=> __('Choose link target', 'cherry-portfolio'),
+					'label'			=> __( 'Link target', 'cherry-portfolio' ),
+					'description'	=> __( 'Choose link target', 'cherry-portfolio' ),
 					'value'			=> '_blank',
 					'options'		=> array(
 						'_self' => array(
-							'label' => __('Self', 'cherry-portfolio'),
+							'label' => __( 'Self', 'cherry-portfolio' ),
 							'img_src' => '',
 						),
 						'_blank' => array(
-							'label' => __('Blank', 'cherry-portfolio'),
+							'label' => __( 'Blank', 'cherry-portfolio' ),
 							'img_src' => '',
 						),
 					)
@@ -111,7 +116,7 @@ class Cherry_Portfolio_Meta_Boxes {
 			'post_type'     => CHERRY_PORTFOLIO_NAME,
 			'context'       => 'normal',
 			'priority'      => 'high',
-			'callback_args' => $post_format_settings
+			'callback_args' => $post_format_settings,
 			)
 		);
 
@@ -136,7 +141,7 @@ class Cherry_Portfolio_Meta_Boxes {
 	 *
 	 * @since 1.0.0
 	 * @param object $post    Current post object.
-	 * @param array  $metabox
+	 * @param array  $metabox Metabox settings.
 	 */
 	public function callback_metabox( $post, $metabox ) {
 		$output = '';
@@ -221,13 +226,13 @@ class Cherry_Portfolio_Meta_Boxes {
 							'toggle'		=> array(
 								'true_toggle'	=> __( 'Yes', 'cherry-portfolio' ),
 								'false_toggle'	=> __( 'No', 'cherry-portfolio' ),
-							)
+							),
 						),
 						array(
 							'id'			=> 'portfolio-image-format-crop-width',
 							'type'			=> 'slider',
-							'label'			=> __( 'Cropping image width', 'cherry-portfolio'),
-							'description'	=> __( 'Width value', 'cherry-portfolio'),
+							'label'			=> __( 'Cropping image width', 'cherry-portfolio' ),
+							'description'	=> __( 'Width value', 'cherry-portfolio' ),
 							'value'			=> 1024,
 							'max_value'		=> 3840,
 							'min_value'		=> 100,
@@ -289,7 +294,7 @@ class Cherry_Portfolio_Meta_Boxes {
 							'id'			=> 'portfolio-gallery-swiper-effect',
 							'type'			=> 'radio',
 							'label'			=> __( 'Slider effect Layout', 'cherry-portfolio'),
-							'description'	=> __( 'Could be "slide", "fade", "cube" or "coverflow"', 'cherry-portfolio'),
+							'description'	=> __( 'Could be "slide", "fade", "cube" or "coverflow"', 'cherry-portfolio' ),
 							'value'			=> 'swiper-effect-slide',
 							'display_input'	=> false,
 							'options'		=> array(
@@ -303,9 +308,9 @@ class Cherry_Portfolio_Meta_Boxes {
 								),
 								'swiper-effect-coverflow' => array(
 									'label' => __( 'Coverflow', 'cherry-portfolio' ),
-									'img_src' => CHERRY_PORTFOLIO_URI.'/admin/assets/images/svg/inherit.svg',
+									'img_src' => CHERRY_PORTFOLIO_URI . '/admin/assets/images/svg/inherit.svg',
 								),
-							)
+							),
 						),
 						array(
 							'id'			=> 'portfolio-gallery-swiper-slides-per-view',
@@ -407,7 +412,7 @@ class Cherry_Portfolio_Meta_Boxes {
 							'toggle'		=> array(
 								'true_toggle'	=> __( 'Enabled', 'cherry-portfolio' ),
 								'false_toggle'	=> __( 'Disabled', 'cherry-portfolio' ),
-							)
+							),
 						),
 						array(
 							'id'			=> 'portfolio-gallery-swiper-crop-image',
@@ -482,12 +487,12 @@ class Cherry_Portfolio_Meta_Boxes {
 								'portfolio-video-type-embed' => array(
 									'label' => __( 'Embed video type', 'cherry-portfolio' ),
 									'img_src' => '',
-									'slave'		=> 'embed-setting-items'
+									'slave'		=> 'embed-setting-items',
 								),
 								'portfolio-video-type-html5' => array(
 									'label' => __( 'HTML5 video type', 'cherry-portfolio' ),
 									'img_src' => '',
-									'slave'		=> 'html-setting-items'
+									'slave'		=> 'html-setting-items',
 								),
 							),
 						),
@@ -541,7 +546,7 @@ class Cherry_Portfolio_Meta_Boxes {
 	 * Metabox post format DOM render.
 	 *
 	 * @param  string|null $post_id Post id value.
-	 * @param  string $format       Post format.
+	 * @param  string      $format       Post format.
 	 * @return void
 	 */
 	public function format_metabox_builder( $post_id = null, $format = 'standart' ) {
@@ -577,8 +582,8 @@ class Cherry_Portfolio_Meta_Boxes {
 	 * Save the meta when the post is saved.
 	 *
 	 * @since 1.0.0
-	 * @param int    $post_id
-	 * @param object $post
+	 * @param int    $post_id Post id value.
+	 * @param object $post    Post object.
 	 */
 	public function save_post( $post_id, $post ) {
 
@@ -629,16 +634,10 @@ class Cherry_Portfolio_Meta_Boxes {
 		// If a new meta value was added and there was no previous value, add it.
 		if ( $new_meta_value && '' == $meta_value ) {
 			add_post_meta( $post_id, CHERRY_PORTFOLIO_POSTMETA, $new_meta_value, true );
-		}
-
-		// If the new meta value does not match the old value, update it.
-		elseif ( $new_meta_value && $new_meta_value != $meta_value ) {
+		} elseif ( $new_meta_value && $new_meta_value != $meta_value ) {
 			$new_meta_value = array_merge( $meta_value, $new_meta_value );
 			update_post_meta( $post_id, CHERRY_PORTFOLIO_POSTMETA, $new_meta_value );
-		}
-
-		// If there is no new meta value but an old value exists, delete it.
-		elseif ( '' == $new_meta_value && $meta_value ) {
+		} elseif ( '' == $new_meta_value && $meta_value ) {
 			delete_post_meta( $post_id, CHERRY_PORTFOLIO_POSTMETA, $meta_value );
 		}
 	}
