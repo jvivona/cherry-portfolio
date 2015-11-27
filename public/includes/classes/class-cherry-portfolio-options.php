@@ -296,7 +296,7 @@ if ( ! class_exists( 'Portfolio_Options' ) ) {
 			$portfolio_options['portfolio-item-margin'] = array(
 				'type'			=> 'slider',
 				'title'			=> __( 'Item margin', 'cherry-portfolio' ),
-				'description'	=> __( 'Select portfolio item margin (outer indent) value.', 'cherry-portfolio '),
+				'description'	=> __( 'Select portfolio item margin (outer indent) value.', 'cherry-portfolio' ),
 				'max_value'		=> 50,
 				'min_value'		=> 0,
 				'value'			=> 4,

@@ -92,7 +92,7 @@ class Cherry_Portfolio_Meta_Boxes {
 							'label' => __( 'Blank', 'cherry-portfolio' ),
 							'img_src' => '',
 						),
-					)
+					),
 				),
 			),
 		));
@@ -293,7 +293,7 @@ class Cherry_Portfolio_Meta_Boxes {
 						array(
 							'id'			=> 'portfolio-gallery-swiper-effect',
 							'type'			=> 'radio',
-							'label'			=> __( 'Slider effect Layout', 'cherry-portfolio'),
+							'label'			=> __( 'Slider effect Layout', 'cherry-portfolio' ),
 							'description'	=> __( 'Could be "slide", "fade", "cube" or "coverflow"', 'cherry-portfolio' ),
 							'value'			=> 'swiper-effect-slide',
 							'display_input'	=> false,

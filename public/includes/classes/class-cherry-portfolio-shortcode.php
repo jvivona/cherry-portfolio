@@ -205,8 +205,8 @@ class Cherry_Portfolio_Shortcode extends Cherry_Portfolio_Data {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param array  $macros    Current buttons array.
-	 * @param string $shortcode Shortcode name.
+	 * @param array  $macros_buttons Current buttons array.
+	 * @param string $shortcode      Shortcode name.
 	 */
 	public function add_macros_buttons( $macros_buttons, $shortcode ) {
 
