@@ -1377,7 +1377,7 @@ add_action( 'wp_ajax_nopriv_get_new_items', 'get_new_items' );
 /**
  * Get new portfolio items.
  *
- * @return string
+ * @return void
  */
 function get_new_items() {
 	if ( ! empty( $_POST )
