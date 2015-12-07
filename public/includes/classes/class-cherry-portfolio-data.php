@@ -95,6 +95,8 @@ class Cherry_Portfolio_Data {
 			'filter_type'						=> 'category',
 			'category_list'						=> self::cherry_portfolio_get_option( 'portfolio-category-list', array() ),
 			'tag_list'							=> self::cherry_portfolio_get_option( 'portfolio-tags-list', array() ),
+			'prev_button_text'					=> self::cherry_portfolio_get_option( 'portfolio-prev-button-text', __( 'Prev page', 'cherry-portfolio' ) ),
+			'next_button_text'					=> self::cherry_portfolio_get_option( 'portfolio-next-button-text', __( 'Next page', 'cherry-portfolio' ) ),
 			'post_format_standart_template'		=> self::cherry_portfolio_get_option( 'portfolio-single-standart-template', 'post-format-standart-template.tmpl' ),
 			'post_format_image_template'		=> self::cherry_portfolio_get_option( 'portfolio-single-image-template', 'post-format-image-template.tmpl' ),
 			'post_format_gallery_template'		=> self::cherry_portfolio_get_option( 'portfolio-single-gallery-template', 'post-format-gallery-template.tmpl' ),
@@ -1050,21 +1052,37 @@ class Cherry_Portfolio_Data {
 							for ( $i = 0; $i < $page_count; $i ++ ) {
 								$counter = $i + 1;
 
+								/**
+								 * Filters HTML-formatted before pagination item text.
+								 *
+								 * @since 1.0.5
+								 * @var string
+								 */
+								$before_pagination_item = apply_filters( 'cherry-portfolio-before-pagination-item', '', $counter );
+
+								/**
+								 * Filters HTML-formatted after pagination item text.
+								 *
+								 * @since 1.0.5
+								 * @var string
+								 */
+								$after_pagination_item = apply_filters( 'cherry-portfolio-after-pagination-item', '', $counter );
+
 								if ( $i !== $current_page_index - 1 ) {
-									$dom_part .= '<li><a href="javascript:void(0)">' . $counter . '</a></li>';
+									$dom_part .= sprintf( '<li><a href="javascript:void(0)">%1$s%2$s%3$s</a></li>', $before_pagination_item, $counter, $after_pagination_item );
 								} else {
-									$dom_part .= '<li class="active"><a href="javascript:void(0)">' . $counter . '</a></li>';
+									$dom_part .= sprintf( '<li class="active"><a href="javascript:void(0)">%1$s%2$s%3$s</a></li>', $before_pagination_item, $counter, $after_pagination_item );
 								}
 							}
 						$dom_part .= '</ul>';
 						$dom_part .= '<div class="page-nav">';
 
 							if ( 1 !== $current_page_index ) {
-								$dom_part .= '<a class="prev-page" href="javascript:void(0)">' . __( 'Prev page', 'cherry-portfolio' ) . '</a>';
+								$dom_part .= '<a class="prev-page" href="javascript:void(0)">' . self::$options['prev_button_text'] . '</a>';
 							}
 
 							if ( $current_page_index < $page_count ) {
-								$dom_part .= '<a class="next-page" href="javascript:void(0)">' . __( 'Next page', 'cherry-portfolio' ) . '</a>';
+								$dom_part .= '<a class="next-page" href="javascript:void(0)">' . self::$options['next_button_text'] . '</a>';
 							}
 						$dom_part .= '</div>';
 					}
