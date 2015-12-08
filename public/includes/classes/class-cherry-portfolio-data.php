@@ -204,6 +204,10 @@ class Cherry_Portfolio_Data {
 				case 'portfolio-more-button-mode':
 						$loading_mode = 'more-button';
 					break;
+
+				case 'portfolio-none-mode':
+						$loading_mode = 'none';
+					break;
 			}
 
 			$container_attr = '';
@@ -456,7 +460,7 @@ class Cherry_Portfolio_Data {
 				}
 
 				// Image.
-				if (	'true' == self::$default_options['is_image_crop'] || 'grid-layout' == $listing_layout ) {
+				if ( 'true' == self::$default_options['is_image_crop'] || 'grid-layout' == $listing_layout ) {
 					$img_url = wp_get_attachment_url( $thumb_id ,'full' );
 					$image = $this->get_crop_image( $img_url, $thumb_id, self::$default_options['image_crop_width'], self::$default_options['image_crop_height'] );
 				} else {
@@ -1462,6 +1466,9 @@ function get_new_items() {
 					break;
 				case 'more-button':
 						$html .= $data->build_ajax_more_button( $posts_query->query_vars['paged'], $post_per_page );
+					break;
+				case 'portfolio-none-mode':
+						$html .= '';
 					break;
 			}
 		$html .= '</div>';
