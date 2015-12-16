@@ -156,6 +156,9 @@ if ( ! class_exists( 'Cherry_Portfolio' ) ) {
 		function admin() {
 
 			if ( is_admin() ) {
+				require_once( CHERRY_PORTFOLIO_DIR . 'admin/includes/class-cherry-page-builder.php' );
+				require_once( CHERRY_PORTFOLIO_DIR . 'admin/includes/class-cherry-options-page.php' );
+				require_once( CHERRY_PORTFOLIO_DIR . 'admin/includes/class-cherry-option-field.php' );
 				require_once( CHERRY_PORTFOLIO_DIR . 'admin/includes/class-cherry-portfolio-admin.php' );
 				require_once( CHERRY_PORTFOLIO_DIR . 'admin/includes/class-cherry-update/class-cherry-plugin-update.php' );
 
@@ -166,6 +169,20 @@ if ( ! class_exists( 'Cherry_Portfolio' ) ) {
 						'repository_name'	=> CHERRY_PORTFOLIO_SLUG,
 				));
 			}
+		}
+
+		/**
+		 * Return true if CherryFramework active.
+		 *
+		 * @return boolean
+		 */
+		public function is_cherry_framework(){
+
+			if ( class_exists( 'Cherry_Framework' ) ) {
+				return true;
+			}
+
+			return false;
 		}
 
 		/**
@@ -252,4 +269,14 @@ if ( ! class_exists( 'Cherry_Portfolio' ) ) {
 	}
 
 	Cherry_Portfolio::get_instance();
+
+	/**
+	 * Define main function to get plugin instance
+	 *
+	 * @since  1.0.0
+	 * @return object
+	 */
+	function cherry_portfolio_class() {
+		return Cherry_Portfolio::get_instance();
+	}
 }

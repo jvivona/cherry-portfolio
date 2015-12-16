@@ -1,0 +1,26 @@
+.cherry-portfolio-options-page-wrapper {
+  background: #fff;
+  position: relative;
+  display: block;
+}
+
+.option-section {
+  border: 1px solid #d4d5d6;
+  border-bottom: none;
+  padding: 18px 18px 30px 18px;
+  position: relative;
+}
+.option-section .option-info-wrapper {
+  width: 25%;
+  float: left;
+}
+.option-section .option-uielement-wrapper {
+  width: 75%;
+  float: left;
+}
+.option-section:nth-child(2n) {
+  background: #fcfcfc;
+}
+.option-section:nth-child(2n) {
+  background-color: #f2f3f4;
+}

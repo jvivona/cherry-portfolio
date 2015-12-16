@@ -292,6 +292,7 @@ class Cherry_Portfolio_Data {
 	 * @return array|bool               Array if true, boolean if false.
 	 */
 	public function get_query_portfolio_items( $query_args = '' ) {
+
 		$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
 		$defaults_query_args = apply_filters( 'cherry_the_portfolio_default_query_args',
@@ -300,9 +301,8 @@ class Cherry_Portfolio_Data {
 				CHERRY_PORTFOLIO_NAME.'_category' => '',
 				'order'                           => 'DESC',
 				'orderby'                         => 'date',
-				'posts_per_page'                  => -1,
+				'posts_per_page'                  => 5,
 				'paged'                           => $paged,
-				'offset'                          => 0,
 				'post_status'                     => 'publish',
 			)
 		);
@@ -1430,7 +1430,7 @@ function get_new_items() {
 			'posts_per_page' => $post_per_page,
 			'order' => $order_settings['order'],
 			'orderby' => $order_settings['orderby'],
-			'paged' => $value_pagination_page,
+			'paged' => intval( $value_pagination_page ),
 		);
 
 		if ( 'post-format-all' !== $posts_format ) {

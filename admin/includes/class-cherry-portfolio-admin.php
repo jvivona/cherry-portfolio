@@ -32,6 +32,13 @@ class Cherry_Portfolio_Admin {
 	public $portfolio_meta_boxes = null;
 
 	/**
+	 * Portfolio settings array.
+	 *
+	 * @var array
+	 */
+	public $portfolio_settings = array();
+
+	/**
 	 * Sets up needed actions/filters for the admin to initialize.
 	 *
 	 * @since  1.0.0
@@ -56,6 +63,13 @@ class Cherry_Portfolio_Admin {
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 
 		add_action( 'wp_ajax_get_new_format_metabox', array( $this, 'get_new_format_metabox' ), 20 );
+
+		trailingslashit( CHERRY_PORTFOLIO_DIR . 'admin/includes/ui-elements/ui-text/ui-text.php' );
+		trailingslashit( CHERRY_PORTFOLIO_DIR . 'admin/includes/ui-elements/ui-switcher/ui-switcher.php' );
+		trailingslashit( CHERRY_PORTFOLIO_DIR . 'admin/includes/ui-elements/ui-radio/ui-radio.php' );
+		trailingslashit( CHERRY_PORTFOLIO_DIR . 'admin/includes/ui-elements/ui-select/ui-select.php' );
+		trailingslashit( CHERRY_PORTFOLIO_DIR . 'admin/includes/ui-elements/ui-slider/ui-slider.php' );
+		trailingslashit( CHERRY_PORTFOLIO_DIR . 'admin/includes/ui-elements/ui-switcher/ui-switcher.php' );
 	}
 
 	/**
@@ -200,8 +214,12 @@ class Cherry_Portfolio_Admin {
 	 *
 	 * @return void
 	 */
-	public function enqueue_styles() {
+	public function enqueue_styles( $hook_suffix ) {
 		$screen = get_current_screen();
+
+		if ( is_admin() && 'plugins_page_portfolio_options' == $hook_suffix ) {
+			wp_enqueue_style( 'page-builder', trailingslashit( CHERRY_PORTFOLIO_URI ) . 'admin/assets/css/page-builder.css', array(), CHERRY_PORTFOLIO_VERSION, 'all' );
+		}
 
 		if ( ! empty( $screen->post_type ) && 'portfolio' === $screen->post_type ) {
 			$option_inteface_builder = new Cherry_Interface_Builder();
