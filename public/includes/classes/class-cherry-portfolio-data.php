@@ -970,13 +970,16 @@ class Cherry_Portfolio_Data {
 
 		$filter_type = $options['filter_type'];
 
-		$args = array(
-			'type'        => CHERRY_PORTFOLIO_NAME,
-			'orderby'     => 'name',
-			'order'       => 'ASC',
-			'taxonomy'    => CHERRY_PORTFOLIO_NAME . '_' . $filter_type,
-			'pad_counts'  => false,
+		$args = apply_filters( 'cherry_portfolio_filter_categories_args',
+			array(
+				'type'        => CHERRY_PORTFOLIO_NAME,
+				'orderby'     => 'name',
+				'order'       => 'ASC',
+				'taxonomy'    => CHERRY_PORTFOLIO_NAME . '_' . $filter_type,
+				'pad_counts'  => false
+			)
 		);
+
 		$order_array = array(
 			'desc'	=> __( 'Desc', 'cherry-portfolio' ),
 			'asc'	=> __( 'Asc', 'cherry-portfolio' ),
